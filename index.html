@@ -385,77 +385,15 @@
       
         
           
-            <h1 id="开始我的博客之旅"><a href="#开始我的博客之旅" class="headerlink" title="开始我的博客之旅"></a>开始我的博客之旅</h1><h2 id="1-Motivation"><a href="#1-Motivation" class="headerlink" title="1. Motivation"></a>1. Motivation</h2><p>在本周阅读阮一峰老师的<a href="http://www.ruanyifeng.com/blog/" target="_blank" rel="noopener">每日科技周刊</a>时，发现了GitHub上有人做了一个<a href="https://github.com/timqian/chinese-independent-blogs" target="_blank" rel="noopener">中文独立博客</a>的列表，上面列出了很多有着自己独立博客的作者（其中大部分是编程出身），花了大概两天的时间顺着列表一个一个的看着他们的博客，探索作者们的生活和学习经历， 希望从这些博客人身上找寻一些生活和工作的启发和灵感， 虽然我不是一个专业的程序员。 的确，我看到了许多让我印象深刻的记录， 发自心底地尊重这些促进互联网进步的人们，这也是启发我搭建自己的博客并且记录自己的心得的重要原因之一。 另外一个原因就是我也想拥有自己的网站，记录自己的生活点滴，真真正正为自己做一些事情。</p>
-<p>其实早在<a href="https://pro.lurenzhi.cn/" target="_blank" rel="noopener">我的师兄</a>还未博士毕业时 (在这祝贺他找到自己心仪的工作！)，受到影响，自己也有搭建博客或网站的想法， 只是当时自己完全投身于所谓的research而没有话时间来做这件事情。 而现在也是趁着research的间隙来做这件事情， 发现这事儿也没有那么困难。</p>
-<h2 id="2-Tools"><a href="#2-Tools" class="headerlink" title="2. Tools"></a>2. Tools</h2><p>这里记录搭建博客过程中用到的工具。 主要借鉴了<a href="https://zhangslob.github.io/2017/02/28/%E6%95%99%E4%BD%A0%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%8CHexo-Github/" target="_blank" rel="noopener">文章1</a>和<a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">文章2</a>的经验。</p>
-<p>注：以下带双引号的内容取自网络。</p>
-<h3 id="2-1-Install-Node-js"><a href="#2-1-Install-Node-js" class="headerlink" title="2.1 Install Node.js"></a>2.1 Install Node.js</h3><p>其实自己的Windows 7 已经安装过Node.js， <strong>所以在照着教程安装软件之前应该检查一下自己电脑是否已经存在此软件， 避免重复工作。</strong> </p>
-<p>以下摘自<a href="https://www.runoob.com/nodejs/nodejs-tutorial.html" target="_blank" rel="noopener">菜鸟教程</a>：</p>
-<p>“简单的说 Node.js 就是运行在服务端的 JavaScript。Node.js 是一个基于Chrome JavaScript 运行时建立的一个平台。”</p>
-<p>还必须安装npm:</p>
-<p>“npm 是 Node.js 默认的、以 JavaScript 编写的软件包管理系统。”</p>
-<h3 id="2-2-Github"><a href="#2-2-Github" class="headerlink" title="2.2 Github"></a>2.2 Github</h3><p>首先你得有一个GitHub的账号。（以前已注册）</p>
-<p>然后右上角选择 Create a new repository ：<strong>yourname.github.io</strong>（第一次创建仓库）</p>
-<h3 id="2-3-Install-Git"><a href="#2-3-Install-Git" class="headerlink" title="2.3 Install Git"></a>2.3 Install Git</h3><p>在Windows上安装Git参见<a href="https://www.liaoxuefeng.com/wiki/896043488029600/896067008724000" target="_blank" rel="noopener">廖雪峰老师Git教程</a>:</p>
-<p>“Git是目前世界上最先进的分布式版本控制系统（没有之一）。</p>
-<p>安装完成后，在开始菜单里找到“Git”-&gt;“Git Bash”。</p>
-<p>安装完成后，还需要最后一步设置，在命令行输入：</p>
-<pre><code>$ git config --global user.name &quot;Your Name&quot;
-$ git config --global user.email &quot;email@example.com&quot;</code></pre><p>因为Git是分布式版本控制系统，所以，每个机器都必须自报家门：你的名字和Email地址。”</p>
-<h2 id="3-Install-Hexo"><a href="#3-Install-Hexo" class="headerlink" title="3. Install Hexo"></a>3. Install Hexo</h2><h3 id="3-1-Introduction"><a href="#3-1-Introduction" class="headerlink" title="3.1 Introduction"></a>3.1 Introduction</h3><p>“Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。”</p>
-<p>很快就完成了Hexo的安装, 可能国内外限制有区别。</p>
-<p>“Hexo就是我们的个人博客网站的框架， 这里需要自己在电脑常里创建一个文件夹，可以命名为Blog，Hexo框架与以后你自己发布的网页都在这个文件夹中。创建好后，进入文件夹中，按住shift键，右击鼠标点击命令行”：open command window here：</p>
-<p><strong>我想shift+右键开启命令行可以快速的打开cmd并进入当前目录。</strong></p>
-<p>“使用npm命令安装Hexo，输入”：</p>
-<pre><code>npm install -g hexo-cli </code></pre><p>“安装完成后，初始化我们的博客，输入”：</p>
-<pre><code>hexo init blog</code></pre><p><strong>注意，以下的命令都是作用在刚刚创建的Blog/blog文件夹。</strong></p>
-<pre><code>命令简写
-hexo n &quot;我的博客&quot; == hexo new &quot;我的博客&quot; #新建文章
-hexo g == hexo generate #生成网页
-hexo s == hexo server #启动服务预览
-hexo d == hexo deploy #部署</code></pre><p>hexo s后， 访问<a href="http://localhost:4000/，便可以看到网站初步的模样，不要激动，我们还要把网页发布到Github上去。" target="_blank" rel="noopener">http://localhost:4000/，便可以看到网站初步的模样，不要激动，我们还要把网页发布到Github上去。</a></p>
-<h3 id="3-2-Deploy-to-Github"><a href="#3-2-Deploy-to-Github" class="headerlink" title="3.2 Deploy to Github"></a>3.2 Deploy to Github</h3><p>“上面只是在本地预览，接下来要做的就是就是推送网站，也就是发布网站，让我们的网站可以被更多的人访问。在设置之前，需要解释一个概念，在blog根目录里的_config.yml文件称为<strong>站点配置文件</strong>“</p>
-<p>“进入根目录里的themes文件夹，里面也有个_config.yml文件，这个称为<strong>主题配置文件</strong>“</p>
-<p>“下一步将我们的Hexo与GitHub关联起来，打开站点的配置文件_config.yml，翻到最后修改为：”</p>
-<pre><code>deploy:
-type: &apos;git&apos; //注意这里我的git要加单引号
-repo: 这里填入你之前在GitHub上创建仓库的完整路径，记得加上 .git
-branch: master</code></pre><p>然后三条命令：</p>
-<pre><code>hexo clean 
-hexo g 
-hexo d</code></pre><p>然后你的博客就上线在yourname.github.io.</p>
-<p>除上面之外， 期间配置了SSH key:</p>
-<p>重新打开CMD，输入：</p>
-<pre><code>ssh-keygen -t rsa -C &quot;Github的注册邮箱地址&quot;</code></pre><p>一路Enter过来就好，得到信息：</p>
-<pre><code>Your public key has been saved in /c/Users/user/.ssh/id_rsa.pub.</code></pre><p>找到该文件，复制里面的所有内容，然后进入<a href="https://github.com/settings/ssh" target="_blank" rel="noopener">GitHub</a>, 输入key.</p>
-<p>在Git Bash中检测GitHub公钥设置是否成功，输入：</p>
-<pre><code>ssh git@github.com</code></pre><p>“这里之所以设置GitHub密钥原因是，通过非对称加密的公钥与私钥来完成加密，公钥放置在GitHub上，私钥放置在自己的电脑里。GitHub要求每次推送代码都是合法用户，所以每次推送都需要输入账号密码验证推送用户是否是合法用户，为了省去每次输入密码的步骤，采用了ssh，当你推送的时候，git就会匹配你的私钥跟GitHub上面的公钥是否是配对的，若是匹配就认为你是合法用户，则允许推送。这样可以保证每次的推送都是正确合法的。”</p>
-<h3 id="3-3-Bind-Domain-Name"><a href="#3-3-Bind-Domain-Name" class="headerlink" title="3.3 Bind Domain Name"></a>3.3 Bind Domain Name</h3><p>可以在阿里云购买域名或者找到<a href="freenom.com">freenom</a>免费注册域名。</p>
-<p>第一步， 我是参见网上的教程注册的一年期免费域名<a href="yexun.ml">yexun.ml</a>，以后再购买阿里云吧！</p>
-<p>ping自己的 <a href="http://xxxx.github.io" target="_blank" rel="noopener">http://xxxx.github.io</a> 的ip地址， 将得到的IP地址添加到freenom里。到此GitHub就和你的域名联系起来了。</p>
-<p>第二步， 登录GitHub，进入之前创建的仓库，点击settings，设置Custom domain，输入你的域名。</p>
-<p>第三步， 进入本地博客文件夹 ，进入blog/source目录下，创建一个记事本文件，输入你的域名<a href="yexun.ml">yexun.ml</a>, 保存，命名为CNAME ，注意保存成<strong>所有文件</strong>而不是txt文件.</p>
-<p>到此，执行hexo 三步命令后，在浏览器就可以访问到你的网站。</p>
-<h4 id="3-3-1-A-problem"><a href="#3-3-1-A-problem" class="headerlink" title="3.3.1 A problem"></a>3.3.1 A problem</h4><p>某次deploy 后网站不能正常显示， 最后发现ping的IP和上次不一样， 所以当然不能访问到freenom记录的IP。</p>
-<p>可是之后又变成原来的IP。奇怪的是我的GitHub IP应该是固定的啊？？？</p>
-<h3 id="3-4-NexT-theme"><a href="#3-4-NexT-theme" class="headerlink" title="3.4 NexT theme"></a>3.4 NexT theme</h3><p>第一，下载主题：</p>
-<p>在blog目录中（就是命令行的位置处于blog目录）打开命令行输入：</p>
-<pre><code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code></pre><p>第二， 打开站点的_config.yml配置文件，修改主题为next：</p>
-<pre><code>theme: next</code></pre><p>第三， 打开主题的_config.yml配置文件，选择scheme：<br>    scheme： Pisces</p>
-<p>再次部署网站，hexo g、hexo d，查看效果。</p>
-<h2 id="4-Markdown"><a href="#4-Markdown" class="headerlink" title="4. Markdown"></a>4. Markdown</h2><p>以前听过这个，但是不知道具体是做什么用的， 而现在正在用着写博客。</p>
-<p>先下载MarkdowmPad 2， 以后再慢慢了解复杂的语法，参见<a href="https://www.appinn.com/markdown/" target="_blank" rel="noopener">这里</a>。</p>
-<h2 id="5-Others"><a href="#5-Others" class="headerlink" title="5. Others"></a>5. Others</h2><p>寻找图床，插入图片，音乐外链，背景等个性化设置以后再慢慢了解。</p>
-<p>以后再更新，已经迫不及待发布这篇博客了。</p>
-<h2 id="6-End"><a href="#6-End" class="headerlink" title="6. End"></a>6. End</h2><p>过去的两三年都是用笔记本手写记录一些学习笔记和任务等，用纸记录当然方便，只是笔记本不在身边时，想去查自己写过的一些东西就变成不可能了。</p>
-<p>以后争取在这个平台记录自己， 很久没有用中文打字或者写一篇文档了， 措辞可能不优美，但是结构一定要完整。 但是感觉用英语写是不是还写得流利些呢！</p>
-<p>以上就是自己搭建并写出第一篇博客的过程， 并没有话很久搭建， 写完这篇文章用了三个多小时。非常感谢Internet上有这么多分享知识的朋友们！ 科技推动社会进步， 而他们加速科技的传播。</p>
-<p>写一篇纯文字长文还是很花时间的，写久了脖子还疼。</p>
-<p>第一次写，有问题可以回过头来改正。</p>
-<p>接下来就是个性化设置一下它。</p>
-<p>一个问题：自己写的文档自己会看吗？</p>
-
-          
+          开始我的博客之旅1. Motivation在本周阅读阮一峰老师的每日科技周刊时，发现了GitHub上有人做了一个中文独立博客的列表，上面列出了很多有着自己独立博客的作者（其中大部分是编程出身），花了大概两天的时间顺着列表一个一个的看着他们的博客，探索作者们的生活和学习经历， 希望从这些博客人身上找寻
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/12/04/%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AABlog/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -604,8 +542,15 @@ hexo d</code></pre><p>然后你的博客就上线在yourname.github.io.</p>
       
         
           
-            
           
+          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/12/03/test-my-site/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -754,21 +699,15 @@ hexo d</code></pre><p>然后你的博客就上线在yourname.github.io.</p>
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo server</span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo generate</span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/12/03/hello-world/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
