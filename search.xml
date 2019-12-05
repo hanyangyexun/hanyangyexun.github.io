@@ -1,6 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>个性化Hexo + nexT主题</title>
+    <url>/2019/12/05/%E4%B8%AA%E6%80%A7%E5%8C%96Hexo%20+%20nexT%E4%B8%BB%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="个性化Hexo-NexT主题"><a href="#个性化Hexo-NexT主题" class="headerlink" title="个性化Hexo + NexT主题"></a>个性化Hexo + NexT主题</h1><p>继昨天搭建好Hexo之后，就开始个性化一些主题设置，以完成基本的博客功能。</p>
+<p>昨天下午写完第一篇之后，就开始着手个性化配置，查了网上的很多教程， 添加菜单栏， 侧边栏点击，文章宽度，字体，文章分割线， Read more，评论，添加本地搜索等等设置。</p>
+<p>这里仅记录配置过程中遇到的一些问题及解决方法。</p>
+<h2 id="1-菜单栏"><a href="#1-菜单栏" class="headerlink" title="1. 菜单栏"></a>1. 菜单栏</h2><p>首先需要注意的是我自己安装的是NexT 5.1.14版本（现在已经到了6, 7版了。），现在已经停止维护，但问题是我配置的时候依然会出现一些bug，停止维护应该说明成熟了没问题啊！</p>
+<p>创建 归档，标签，关于 页面,参考<a href="https://sjq597.github.io/2018/05/15/Hexo%E4%BD%BF%E7%94%A8next-Pisces%E4%B8%BB%E9%A2%98/" target="_blank" rel="noopener">这里</a>：</p>
+<pre><code>hexo new page categories
+hexo new page tags
+hexo new page about</code></pre><p>修改相应的index.md文件：</p>
+<pre><code>---
+title: categories
+date: 2019-12-04 20:07:50
+type: &quot;categories&quot;
+comments: false
+---</code></pre><p>以及：</p>
+<pre><code>---
+title: tags
+date: 2019-12-04 20:10:14
+type: &quot;tags&quot;
+comments: false
+---</code></pre><p>comment：false此行关闭当前页面的评论。</p>
+<p>然后在主题配置文件里去掉相应的注释（以下是不可行的配置）：</p>
+<pre><code>menu:
+  home: / || home
+  archives: /archives/ || archive
+  categories: /categories/ || th
+  tags: /tags/ || tags
+  about: /about/ || user
+  #schedule: /schedule/ || calendar
+  #sitemap: /sitemap.xml || sitemap
+  #commonweal: /404/ || heartbeat</code></pre><p>创建完毕后博客已经可以显示添加的菜单栏按钮， 只是点击时无法正常显示页面。处理了一晚上也无法解决。</p>
+<p>最后发现问题在这，我必须配置成如下才能正常显示，比如：</p>
+<pre><code>menu:
+  home: /|| home</code></pre><p>而不是网上大部分人写的：</p>
+<pre><code>menu:
+  home: / || home</code></pre><p>区别是我需要去掉’/‘和‘||’之间的空格，否者怎么也不能正常显示，查看URL是：</p>
+<pre><code>http://yexun.ml/tags/%20</code></pre><p>之类的，当然不能正确链接！！！（期间一度怀疑是自己的NexT主题安装位置不对导致链接path不对。）</p>
+<p>注意：我所有的命令操作都是在Blog/blog下执行（这就是所谓的“站点根目录”？）</p>
+<p>但是手动输入：</p>
+<pre><code>http://yexun.ml/tags/index.html</code></pre><p>是可以正常显示的，显然是刚才的配置有问题。(下面是正常配置：)</p>
+<pre><code>menu:
+home: /|| home
+archives: /archives/
+categories: /categories/|| th
+tags: /tags/|| tags
+about: /about/|| user
+#schedule: /schedule/ || calendar
+#sitemap: /sitemap.xml || sitemap
+#commonweal: /404/ || heartbeat</code></pre><h2 id="2-侧边栏"><a href="#2-侧边栏" class="headerlink" title="2. 侧边栏"></a>2. 侧边栏</h2><p>hexo 侧边栏上有三个标签 posts, categories, tags. 点击它们同样可以连接到菜单栏上面的 archive，categories， tags.</p>
+<p>问题又来了，点击posts时跳转失败，和上面的一样出现不正确的URL。</p>
+<p>又是查找半天原因，发现只有去掉标签的icon代码（如上）后可以正常点击。不知道为何会出现这样的bug!!</p>
+<p>为了一致，索性去掉所有icon：</p>
+<pre><code>menu_icons:
+  enable: false</code></pre><p>到此博客的所有点击均正常。</p>
+<h2 id="3-本地搜索"><a href="#3-本地搜索" class="headerlink" title="3. 本地搜索"></a>3. 本地搜索</h2><p>还需要一个搜索功能，同样找到网上的教程操作可以配置， 只是点击search后会弹出一个空白页面， 也是查找很久才找到<a href="https://blog.csdn.net/lihangll/article/details/103335246" target="_blank" rel="noopener">解决办法</a>：</p>
+<p>“原因就是打开了外链，要么关了，要么就限定下作用域:</p>
+<pre><code>external_link: 
+  enable: true   
+   field: post</code></pre><p>改成post完美解决！</p>
+<h2 id="4-其它"><a href="#4-其它" class="headerlink" title="4. 其它"></a>4. 其它</h2><p>字体设置参考的<a href="http://theme-next.iissnan.com/theme-settings.html#categories-page" target="_blank" rel="noopener">这里</a>。</p>
+<p>需要其它设置可以找Google。</p>
+<h2 id="5-总结"><a href="#5-总结" class="headerlink" title="5. 总结"></a>5. 总结</h2><p>网上有很多博主都是用的Hexo + nexT来搭建自己的博客， 记录自他们己遇到的问题以供日后他人参考， 在这里表示感谢。</p>
+<p>接下来就是了解怎么插入图片，以及其他的一些必须的配置了，比如说访客统计。</p>
+]]></content>
+      <categories>
+        <category>web tech</category>
+      </categories>
+      <tags>
+        <tag>note</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>搭建我的第一个Blog</title>
     <url>/2019/12/04/%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AABlog/</url>
     <content><![CDATA[<h1 id="开始我的博客之旅"><a href="#开始我的博客之旅" class="headerlink" title="开始我的博客之旅"></a>开始我的博客之旅</h1><h2 id="1-Motivation"><a href="#1-Motivation" class="headerlink" title="1. Motivation"></a>1. Motivation</h2><p>在本周阅读阮一峰老师的<a href="http://www.ruanyifeng.com/blog/" target="_blank" rel="noopener">每日科技周刊</a>时，发现了GitHub上有人做了一个<a href="https://github.com/timqian/chinese-independent-blogs" target="_blank" rel="noopener">中文独立博客</a>的列表，上面列出了很多有着自己独立博客的作者（其中大部分是编程出身），花了大概两天的时间顺着列表一个一个的看着他们的博客，探索作者们的生活和学习经历， 希望从这些博客人身上找寻一些生活和工作的启发和灵感， 虽然我不是一个专业的程序员。 的确，我看到了许多让我印象深刻的记录， 发自心底地尊重这些促进互联网进步的人们，这也是启发我搭建自己的博客并且记录自己的心得的重要原因之一。 另外一个原因就是我也想拥有自己的网站，记录自己的生活点滴，真真正正为自己做一些事情。</p>
@@ -74,10 +147,10 @@ hexo d</code></pre><p>然后你的博客就上线在yourname.github.io.</p>
 <p>一个问题：自己写的文档自己会看吗？</p>
 ]]></content>
       <categories>
-        <category>life</category>
+        <category>web tech</category>
       </categories>
       <tags>
-        <tag>notes</tag>
+        <tag>note</tag>
       </tags>
   </entry>
   <entry>
@@ -85,10 +158,10 @@ hexo d</code></pre><p>然后你的博客就上线在yourname.github.io.</p>
     <url>/2019/12/03/test-my-site/</url>
     <content><![CDATA[]]></content>
       <categories>
-        <category>work</category>
+        <category>initial</category>
       </categories>
       <tags>
-        <tag>note1</tag>
+        <tag>testing</tag>
       </tags>
   </entry>
   <entry>
@@ -109,10 +182,10 @@ hexo d</code></pre><p>然后你的博客就上线在yourname.github.io.</p>
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 ]]></content>
       <categories>
-        <category>study</category>
+        <category>initial</category>
       </categories>
       <tags>
-        <tag>note2</tag>
+        <tag>testing</tag>
       </tags>
   </entry>
 </search>
