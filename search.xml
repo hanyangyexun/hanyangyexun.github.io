@@ -3,7 +3,7 @@
   <entry>
     <title>个性化Hexo + nexT主题</title>
     <url>/2019/12/05/%E4%B8%AA%E6%80%A7%E5%8C%96Hexo%20+%20nexT%E4%B8%BB%E9%A2%98/</url>
-    <content><![CDATA[<h1 id="个性化Hexo-NexT主题"><a href="#个性化Hexo-NexT主题" class="headerlink" title="个性化Hexo + NexT主题"></a>个性化Hexo + NexT主题</h1><p>继昨天搭建好Hexo之后，就开始个性化一些主题设置，以完成基本的博客功能。</p>
+    <content><![CDATA[<p>继昨天搭建好Hexo之后，就开始个性化一些主题设置，以完成基本的博客功能。</p>
 <p>昨天下午写完第一篇之后，就开始着手个性化配置，查了网上的很多教程， 添加菜单栏， 侧边栏点击，文章宽度，字体，文章分割线， Read more，评论，添加本地搜索等等设置。</p>
 <p>这里仅记录配置过程中遇到的一些问题及解决方法。</p>
 <h2 id="1-菜单栏"><a href="#1-菜单栏" class="headerlink" title="1. 菜单栏"></a>1. 菜单栏</h2><p>首先需要注意的是我自己安装的是NexT 5.1.14版本（现在已经到了6, 7版了。），现在已经停止维护，但问题是我配置的时候依然会出现一些bug，停止维护应该说明成熟了没问题啊！</p>
