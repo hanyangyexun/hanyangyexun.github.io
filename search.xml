@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>note,md</title>
+    <url>/2019/12/05/note/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>个性化Hexo + nexT主题</title>
     <url>/2019/12/05/%E4%B8%AA%E6%80%A7%E5%8C%96Hexo%20+%20nexT%E4%B8%BB%E9%A2%98/</url>
     <content><![CDATA[<p>继昨天搭建好Hexo之后，就开始个性化一些主题设置，以完成基本的博客功能。</p>
