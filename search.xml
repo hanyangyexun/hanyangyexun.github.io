@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>最后的Hexo + NexT 配置</title>
-    <url>/2019/12/05/%E6%9C%80%E5%90%8E%E7%9A%84Hexo%20+%20NexT%20%E9%85%8D%E7%BD%AE/</url>
+    <url>/2019/12/05/3-Hexo-NexT/</url>
     <content><![CDATA[<p>在今天晚上对博客进行了应该是最后的配置，具体如下：</p>
 <h2 id="1-文章结束语"><a href="#1-文章结束语" class="headerlink" title="1. 文章结束语"></a>1. 文章结束语</h2><p>在文章末尾加入—-The End —-标致。</p>
 <p>参见网上文章，比如<a href="https://asdfv1929.github.io/2018/01/28/add-the-end/" target="_blank" rel="noopener">这个</a>。</p>
@@ -20,7 +20,10 @@
 <p>发现此两者是相似的评论插件。都必须在GitHub上注册新应用。</p>
 <p>进行相应的配置，deploy之后就可以正常使用gitalk了！！</p>
 <p>注意：一定要deploy才可以看到效果，在本地是不行的。</p>
-<h2 id="4-总结"><a href="#4-总结" class="headerlink" title="4. 总结"></a>4. 总结</h2><p>添加和完善各种功能其实还是挺花时间的，但是程序这块，付出总有回报！</p>
+<p>##4. Gitalk Error: Validation Failed ##</p>
+<p>评论出现这个错误是因为 “由于label太长导致的无法评论”。</p>
+<p>缩短markdown 文件的命名即可解决。</p>
+<h2 id="5-总结"><a href="#5-总结" class="headerlink" title="5. 总结"></a>5. 总结</h2><p>添加和完善各种功能其实还是挺花时间的，但是程序这块，付出总有回报！</p>
 ]]></content>
       <categories>
         <category>web tech</category>
@@ -31,7 +34,7 @@
   </entry>
   <entry>
     <title>个性化Hexo + nexT主题</title>
-    <url>/2019/12/05/%E4%B8%AA%E6%80%A7%E5%8C%96Hexo%20+%20nexT%E4%B8%BB%E9%A2%98/</url>
+    <url>/2019/12/05/2-Hexo-nexT/</url>
     <content><![CDATA[<p>继昨天搭建好Hexo之后，就开始个性化一些主题设置，以完成基本的博客功能。</p>
 <p>昨天下午写完第一篇之后，就开始着手个性化配置，查了网上的很多教程， 添加菜单栏， 侧边栏点击，文章宽度，字体，文章分割线， Read more，评论，添加本地搜索等等设置。</p>
 <p>这里仅记录配置过程中遇到的一些问题及解决方法。</p>
@@ -104,7 +107,7 @@ about: /about/|| user
   </entry>
   <entry>
     <title>搭建我的第一个Blog</title>
-    <url>/2019/12/04/%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AABlog/</url>
+    <url>/2019/12/04/1-my-first-blog/</url>
     <content><![CDATA[<h1 id="开始我的博客之旅"><a href="#开始我的博客之旅" class="headerlink" title="开始我的博客之旅"></a>开始我的博客之旅</h1><h2 id="1-Motivation"><a href="#1-Motivation" class="headerlink" title="1. Motivation"></a>1. Motivation</h2><p>在本周阅读阮一峰老师的<a href="http://www.ruanyifeng.com/blog/" target="_blank" rel="noopener">每日科技周刊</a>时，发现了GitHub上有人做了一个<a href="https://github.com/timqian/chinese-independent-blogs" target="_blank" rel="noopener">中文独立博客</a>的列表，上面列出了很多有着自己独立博客的作者（其中大部分是编程出身），花了大概两天的时间顺着列表一个一个的看着他们的博客，探索作者们的生活和学习经历， 希望从这些博客人身上找寻一些生活和工作的启发和灵感， 虽然我不是一个专业的程序员。 的确，我看到了许多让我印象深刻的记录， 发自心底地尊重这些促进互联网进步的人们，这也是启发我搭建自己的博客并且记录自己的心得的重要原因之一。 另外一个原因就是我也想拥有自己的网站，记录自己的生活点滴，真真正正为自己做一些事情。</p>
 <p>其实早在<a href="https://pro.lurenzhi.cn/" target="_blank" rel="noopener">我的师兄</a>还未博士毕业时 (在这祝贺他找到自己心仪的工作！)，受到影响，自己也有搭建博客或网站的想法， 只是当时自己完全投身于所谓的research而没有话时间来做这件事情。 而现在也是趁着research的间隙来做这件事情， 发现这事儿也没有那么困难。</p>
 <h2 id="2-Tools"><a href="#2-Tools" class="headerlink" title="2. Tools"></a>2. Tools</h2><p>这里记录搭建博客过程中用到的工具。 主要借鉴了<a href="https://zhangslob.github.io/2017/02/28/%E6%95%99%E4%BD%A0%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%8CHexo-Github/" target="_blank" rel="noopener">文章1</a>和<a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">文章2</a>的经验。</p>
