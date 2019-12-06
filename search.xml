@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>image</title>
+    <title>添加图片</title>
     <url>/2019/12/06/4-image/</url>
     <content><![CDATA[<p>此次记录在markdown 中添加图片的过程。</p>
 <h2 id="1-GitHub-图片仓库"><a href="#1-GitHub-图片仓库" class="headerlink" title="1. GitHub 图片仓库"></a>1. GitHub 图片仓库</h2><p>可以在GitHub上创建一个仓库来专门存放图片，参见<a href="https://segmentfault.com/a/1190000018734982" target="_blank" rel="noopener">教程</a>。</p>
@@ -12,12 +12,17 @@
 $ git add .
 $ git commit -am 备注
 $ git push</code></pre><p>四，然后就可以在GitHub上获取图片的链接了。</p>
-<h2 id="2-测试"><a href="#2-测试" class="headerlink" title="2. 测试"></a>2. 测试</h2><p>用瓜哥的扣篮照片测试：</p>
-<p><img src="https://raw.githubusercontent.com/hanyangyexun/MyImages/master/img_1/anthony.jpg" alt="anthony"></p>
+<p>五，Markdown <a href="https://www.jianshu.com/p/280c6a6f2594" target="_blank" rel="noopener">图片语法</a>：</p>
+<pre><code>![Alt text](图片链接 &quot;optional title&quot;)</code></pre><h2 id="2-测试"><a href="#2-测试" class="headerlink" title="2. 测试"></a>2. 测试</h2><p>用瓜哥的扣篮照片测试：</p>
+<p><img src="https://raw.githubusercontent.com/hanyangyexun/MyImages/master/img_1/anthony.jpg" alt="anthony" title="瓜哥扣篮"></p>
 <p>效果很好！</p>
 <p>恭喜瓜哥在开拓者重回巅峰当老大！</p>
 <p><strong>Get the fuck out of here!</strong></p>
+<p>另，其实也可以直接用网上的图片链接（右键复制图片地址）：</p>
+<p><img src="http://n.sinaimg.cn/sports/2_img/dfic/d8013d78/107/w683h1024/20191204/8fff-ikhvemx6267632.jpg" alt="瓜哥" title="新浪图片"></p>
+<p>就看网上链接会不会失效了。</p>
 <h2 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a>3. 总结</h2><p>应该熟练掌握GitHub的操作，新建项目，克隆项目到本地，以及提交到GitHub。</p>
+<p>彩蛋：用 <code>&lt;br/&gt;</code> 可实现换行， 用反单引号实现代码块。</p>
 ]]></content>
       <categories>
         <category>web tech</category>
