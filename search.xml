@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>phd-toberead</title>
+    <url>/2019/12/08/phd-toberead/</url>
+    <content><![CDATA[<p>This post contains Internet articles introducing knowledge that I should know in electronic major, when I am free, I should check them.</p>
+<p>1、<a href="http://www.steves-internet-guide.com/http-basics/" target="_blank" rel="noopener">Understanding HTTP Basics</a>.</p>
+<p>2、<a href="https://seekbetter.me/" target="_blank" rel="noopener">中国个人独立博客</a>.</p>
+<p>3、知乎：<a href="https://www.zhihu.com/question/27368268" target="_blank" rel="noopener">计算机专业大学生应该在大学四年踏实学哪些东西?</a>.</p>
+<p>4、进程间通信之共享内存（IPC-shared memory）: <a href="https://www.cnblogs.com/youngerchina/p/5624525.html" target="_blank" rel="noopener">参考</a>. 进程间通信和   <a href="http://www.cleey.com/blog/single/id/790.html" target="_blank" rel="noopener">多线程</a> 的区别是什么？</p>
+]]></content>
+      <categories>
+        <category>PhD</category>
+      </categories>
+      <tags>
+        <tag>updating</tag>
+        <tag>major</tag>
+        <tag>study</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于 phd 的道理</title>
+    <url>/2019/12/06/phd-daoli/</url>
+    <content><![CDATA[<ul>
+<li><p>相较于年轻或中年教授，选择即将退休的教授当你的 advisor， 大多数情况下， 你会在寻找 research topic 的时候感到毫无头绪， 因为他并不能给你提供好的idea， 或者说他没有和你一起搞research。所以尽量选择年轻的，有根基的实验室和导师， 和他一起进步，他评选教授拉项目，而你顺利拿到你的博士学位。</p>
+</li>
+<li><p>在工作中，应该避免出现做无用功的情况，例如遇到不可避免的繁冗易错枯燥的事情（比如AML Editor之类），先想清楚再下手，。</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>PhD</category>
+      </categories>
+      <tags>
+        <tag>thought</tag>
+        <tag>updating</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>How much money I spent on sneaker</title>
     <url>/2019/12/06/buy-shoes/</url>
     <content><![CDATA[<p>It is time to calculate how much money (KRW) I have spent on basketball shoes since last year.</p>
@@ -63,12 +99,78 @@ That's amazing!
 </ul>
 <p><strong>What can I do?</strong></p>
 <p><strong>But I love all my shoes!</strong></p>
+<hr>
+<p>彩蛋：</p>
+<p>　　一个简单的教程<a href="https://www.jianshu.com/p/617b59b36b85" target="_blank" rel="noopener">怪木西西写的Markdown教程</a>.</p>
 ]]></content>
       <categories>
         <category>life</category>
       </categories>
       <tags>
         <tag>hobby</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>再遇 Nginx Web Server</title>
+    <url>/2019/12/06/nginx-web-server/</url>
+    <content><![CDATA[<p>下午准备在Ubuntu 上测试一下 Android app 的 Restful 获取Nginx web server上面的xml 数据， 距离上次项目搞Nginx 过去了接近一年，于是先回顾了Nginx的安装配置过程， 这里记录再次使用nginx 遇到的问题。</p>
+<h2 id="1-Nginx"><a href="#1-Nginx" class="headerlink" title="1. Nginx"></a>1. Nginx</h2><p>自己的Ubuntu上已经安装过Nginx，但是还发现已安装Openrestry, 回想起来是上次项目， 实验室师兄帮忙安装过，原因是上次的app 死活连接不上xml data, 弄很久，师兄给换了Openrestry, 说是和Nginx差不多。</p>
+<p>时至今日我已经记不得怎么操作openrestry, 从哪里配置文件路径等，弄很久没弄明白，于是想原因可能是Nginx 和 openrestry 发生冲突，遂想卸载openrestry.</p>
+<p>因为一打开浏览器的localhost 就出现openrestry的消息。</p>
+<p>网上居然没有卸载方法， 只找到<a href="https://github.com/openresty/lua-nginx-module/issues/642" target="_blank" rel="noopener">一个</a>, 删除了相关文件夹。之后想让localhost出现Nginx的消息，于是想一并卸载重装，遇到不少问题。</p>
+<p>通过网上的<a href="https://segmentfault.com/a/1190000014027697" target="_blank" rel="noopener">方法</a>卸载后，重新安装是出现报错，虽然可以查询到Nginx的版本信息，但是肯定是没有安装好的, 尝试了很多重复的命令无果， 于是想着重启Ubuntu<a href="https://stackoverflow.com/questions/50599808/nginx-installation-error" target="_blank" rel="noopener">再试</a>， 重新安装后果然成功， localhost出现“welcome to Nginx”, 虽然不知道是什么原因，也不愿意去仔细分析报错原因，总归问题得到了解决！</p>
+<p>总结：耗费一下午卸载了Openrestry 和 Nginx, <a href="https://www.jianshu.com/p/d9f886a9666a" target="_blank" rel="noopener">重装</a>了Nginx。</p>
+<p>在重装使用Nginx时，发现在配置文件里：</p>
+<pre><code>root /home/xx/share; # 存放文件的目录</code></pre><p><strong>这里的xx应该替换为用户名yexun</strong></p>
+<p>因为查看home的路径时，先得进入用户名。</p>
+<p>突然意识到Openrestry应该没问题，只是我的路径没配置好。</p>
+<p><strong>哎，以后还是把问题搞清楚了后，再采取行动，不要盲目照搬照套！先理解再做！</strong></p>
+<h2 id="2-xml文件无法在浏览器加载"><a href="#2-xml文件无法在浏览器加载" class="headerlink" title="2. xml文件无法在浏览器加载"></a>2. xml文件无法在浏览器加载</h2><p>如遇此情况，去掉行首的：</p>
+<blockquote>
+<?xml version="1.0" encoding="utf-8"?></blockquote>
+]]></content>
+      <categories>
+        <category>project</category>
+      </categories>
+      <tags>
+        <tag>Nginx</tag>
+        <tag>Ubuntu</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Android Studio 使用笔记</title>
+    <url>/2019/12/06/androidstudio-note/</url>
+    <content><![CDATA[<p>这里记录在使用Android Studio 开发 AAS app 时遇到的一些值得记录的问题。</p>
+<p>“遇到问题 - 查询解决问题 - 记录问题” 这才是正确的方式。以免在然后遇到相同问题还得再花时间查询解决。</p>
+<p>自己写的技术文档真的是一个好东西，可能短时间你不会用到它，若干时间记忆退却之后，它能让你迅速想起。</p>
+<p>1、AS 打开<strong>本地项目</strong></p>
+<p>直接关掉当前项目，然后 “open an existing project” 就行。</p>
+<p>如若要导入一个<strong>外来项目</strong>， 则需要检查相关配置文件，详见 <a href="https://blog.csdn.net/qq_34055875/article/details/79022443" target="_blank" rel="noopener">谷歌</a>。</p>
+<p>2、Project setup: reading from cache</p>
+<p>打开本地项目后，Event Log 出现： Project setup: reading from cache…</p>
+<p><a href="https://www.cnblogs.com/5igis/p/5igis_12502.html" target="_blank" rel="noopener">解决方法</a>：打开项目的gradle.perperties文件，添加一行: </p>
+<blockquote>
+<p>org.gradle.configureondemand=false</p>
+</blockquote>
+<p>3、真机调试</p>
+<p>连接USB打开开发者选项， 直接Run一下就可进行build - run- install.</p>
+<p>4、同一设备上安装多个相同的apk，便于调试</p>
+<p>参考<a href="https://blog.csdn.net/u012416928/article/details/47355553" target="_blank" rel="noopener">这里</a>, 在 <code>build.gradle(Module: app)</code> 文件里添加：</p>
+<pre><code>debug {
+
+        applicationIdSuffix &quot;debug&quot;
+
+    }</code></pre><p>修改 “debug”值就可以。</p>
+<p><a href="https://blog.csdn.net/kingmax54212008/article/details/82842089" target="_blank" rel="noopener">这里</a> 有解释。</p>
+<p>注： 之前我的这个文件里是没有这段代码的，所以我直接添加了这段代码。</p>
+<p>其他方法还有修改包名之类的，看起来很复杂，便没有尝试。</p>
+]]></content>
+      <categories>
+        <category>project</category>
+      </categories>
+      <tags>
+        <tag>Android</tag>
+        <tag>AAS</tag>
       </tags>
   </entry>
   <entry>
