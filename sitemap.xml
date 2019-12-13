@@ -1,202 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>http://yexun.ml/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/archives/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/categories/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/tags/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/about/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/2019/12/13/hexo-fanye-problem/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/categories/web-tech/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/2019/12/12/nginx-web-server/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/categories/project/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/2019/12/11/androidstudio-note/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/2019/12/08/phd-toberead/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/categories/PhD/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/2019/12/06/phd-daoli/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/2019/12/06/buy-shoes/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/categories/life/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/2019/12/06/4-image/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/2019/12/05/3-Hexo-NexT/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/2019/12/05/2-Hexo-nexT/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/2019/12/04/1-my-first-blog/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/page/2/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/categories/index.html</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/tags/index.html</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/archives/page/2/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/categories/initial/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/tags/AAS/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/tags/Android/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/tags/Nginx/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/tags/Ubuntu/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/tags/hexo/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/tags/hobby/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/tags/major/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/tags/note/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/tags/study/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/tags/testing/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/tags/thought/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/tags/updating/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/2019/12/03/test-my-site/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://yexun.ml/2019/12/03/hello-world/</loc>
-  <lastmod>2019-12-13T07:14:26+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://yoursite.com/2019/12/13/hexo-fanye-problem/</loc>
+    
+    <lastmod>2019-12-13T05:56:33.051Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/12/11/androidstudio-note/</loc>
+    
+    <lastmod>2019-12-12T11:00:19.795Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/12/12/nginx-web-server/</loc>
+    
+    <lastmod>2019-12-12T11:00:07.050Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/12/08/phd-toberead/</loc>
+    
+    <lastmod>2019-12-12T10:54:22.140Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/12/06/phd-daoli/</loc>
+    
+    <lastmod>2019-12-12T10:53:27.161Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/12/06/buy-shoes/</loc>
+    
+    <lastmod>2019-12-06T11:40:14.452Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/12/06/4-image/</loc>
+    
+    <lastmod>2019-12-06T07:24:20.796Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2019-12-06T07:21:43.868Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/12/05/3-Hexo-NexT/</loc>
+    
+    <lastmod>2019-12-06T01:36:05.580Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/12/05/2-Hexo-nexT/</loc>
+    
+    <lastmod>2019-12-05T08:34:12.452Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/12/03/hello-world/</loc>
+    
+    <lastmod>2019-12-05T08:24:06.931Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/12/03/test-my-site/</loc>
+    
+    <lastmod>2019-12-05T08:23:05.788Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/12/04/1-my-first-blog/</loc>
+    
+    <lastmod>2019-12-05T07:04:05.164Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/categories/index.html</loc>
+    
+    <lastmod>2019-12-05T02:22:51.180Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/index.html</loc>
+    
+    <lastmod>2019-12-05T00:33:39.268Z</lastmod>
+    
+  </url>
+  
 </urlset>
