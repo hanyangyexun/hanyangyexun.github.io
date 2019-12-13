@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo 提交谷歌搜索收录</title>
+    <url>/2019/12/13/hexo-google-record/</url>
+    <content><![CDATA[<p>下午花了两个多小时试图配置博客以让谷歌搜索引擎收录，查看<a href="https://www.itrhx.com/2019/09/17/A48-submit-search-engine-inclusion/" target="_blank" rel="noopener">教程</a>，本以为是很简单的工作，没想到花了很久，还没弄好，问题出在用 Google Search Console 提交站点地图时出现 “无法获取”的状态， 正常情况下是 “成功”。</p>
+<p>查了好久也，没找到原因,明天再试试吧，这里仅记录一下过程</p>
+<p>1、跟着教程一系列操作就行。</p>
+<p>2、中间回忆起来自己把域名搭在freenom上面，期间需要在此网站上验证域名，即添加谷歌生成的一串txt验证。</p>
+<p>3、期间还需对站点的配置文件进行配置等，可参见网上其他添加百度谷歌收录等帖子。</p>
+<p>4、生产sitemap站点地图时，不要用网上的网站生成再放到博客根目录下，直接用命令安装插件：</p>
+<pre><code>npm install hexo-generator-sitemap --save</code></pre><p>会自动生成sitemap.xml 文件的。</p>
+<p>5、博客的根目录，如需要，可以将需要放在根目录的文件放在 public 文件夹下，因为public文件夹会部署到GitHub上。</p>
+]]></content>
+      <categories>
+        <category>web tech</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo 翻页显示问题</title>
     <url>/2019/12/13/hexo-fanye-problem/</url>
     <content><![CDATA[<p>今天翻博客时发现在博客底部的翻页出现显示问题。</p>
@@ -96,8 +115,8 @@
         <category>PhD</category>
       </categories>
       <tags>
-        <tag>major</tag>
         <tag>updating</tag>
+        <tag>major</tag>
         <tag>study</tag>
       </tags>
   </entry>
@@ -115,8 +134,8 @@
         <category>PhD</category>
       </categories>
       <tags>
-        <tag>updating</tag>
         <tag>thought</tag>
+        <tag>updating</tag>
       </tags>
   </entry>
   <entry>
