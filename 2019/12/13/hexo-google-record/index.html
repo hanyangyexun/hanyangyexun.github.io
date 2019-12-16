@@ -132,7 +132,7 @@
 <meta property="og:site_name" content="YEASUNNY">
 <meta property="og:description" content="下午花了两个多小时试图配置博客以让谷歌搜索引擎收录，查看教程，本以为是很简单的工作，没想到花了很久，还没弄好，问题出在用 Google Search Console 提交站点地图时出现 “无法获取”的状态， 正常情况下是 “成功”。 查了好久也，没找到原因,明天再试试吧，这里仅记录一下过程 1、跟着教程一系列操作就行。 2、中间回忆起来自己把域名搭在freenom上面，期间需要在此网站上验证域名，">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-13T11:10:48.786Z">
+<meta property="og:updated_time" content="2019-12-16T00:27:02.358Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -422,7 +422,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  291
+                  384
                 </span>
               
 
@@ -463,10 +463,15 @@
 <p>查了好久也，没找到原因,明天再试试吧，这里仅记录一下过程</p>
 <p>1、跟着教程一系列操作就行。</p>
 <p>2、中间回忆起来自己把域名搭在freenom上面，期间需要在此网站上验证域名，即添加谷歌生成的一串txt验证。</p>
-<p>3、期间还需对站点的配置文件进行配置等，可参见网上其他添加百度谷歌收录等帖子。</p>
-<p>4、生产sitemap站点地图时，不要用网上的网站生成再放到博客根目录下，直接用命令安装插件：</p>
+<p>3、期间还需对站点的config配置文件进行配置等(也不知道有的配置到底起作用没)，可参见网上其他添加百度谷歌收录等帖子。</p>
+<p>4、生产sitemap站点地图时，<strong>不要用网上的网站生成再放到博客根目录下</strong>，直接用命令安装插件：</p>
 <pre><code>npm install hexo-generator-sitemap --save</code></pre><p>会自动生成sitemap.xml 文件的。</p>
 <p>5、博客的根目录，如需要，可以将需要放在根目录的文件放在 public 文件夹下，因为public文件夹会部署到GitHub上。</p>
+<p>6、很多方法都试过，包括<a href="https://javahikers.github.io/2019/06/16/hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%94%B6%E5%BD%95%E8%B0%B7%E6%AD%8C%E7%9A%84%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/" target="_blank" rel="noopener">添加robots.txt</a>, 还是没弄好。难道真的是谷歌问题，要等它定期检查网站吗！</p>
+<blockquote>
+<p>“robots.txt”文件会告诉搜索引擎它们是否可以访问您网站的各个部分并执行抓取。</p>
+</blockquote>
+<p>7、google search console couldn’t fetch sitemap</p>
 
       
     </div>
@@ -545,6 +550,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2019/12/16/zhihu-haoju/" rel="prev" title="zhihu-haoju">
+                zhihu-haoju <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -614,7 +623,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>

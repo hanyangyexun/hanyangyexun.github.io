@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yexun.ml/2019/12/08/phd-toberead/</loc>
+    
+    <lastmod>2019-12-16T12:57:59.993Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yexun.ml/2019/12/16/zhihu-haoju/</loc>
+    
+    <lastmod>2019-12-16T12:57:57.581Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yexun.ml/2019/12/13/hexo-google-record/</loc>
     
-    <lastmod>2019-12-13T11:10:48.786Z</lastmod>
+    <lastmod>2019-12-16T00:27:02.358Z</lastmod>
     
   </url>
   
@@ -26,13 +40,6 @@
     <loc>http://yexun.ml/2019/12/12/nginx-web-server/</loc>
     
     <lastmod>2019-12-12T11:00:07.050Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yexun.ml/2019/12/08/phd-toberead/</loc>
-    
-    <lastmod>2019-12-12T10:54:22.140Z</lastmod>
     
   </url>
   

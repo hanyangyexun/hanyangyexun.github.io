@@ -1,16 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>zhihu-haoju</title>
+    <url>/2019/12/16/zhihu-haoju/</url>
+    <content><![CDATA[<h2 id="为什么有的人年纪轻轻却思想深度远高于常人？"><a href="#为什么有的人年纪轻轻却思想深度远高于常人？" class="headerlink" title="为什么有的人年纪轻轻却思想深度远高于常人？"></a>为什么有的人年纪轻轻却思想深度远高于常人？</h2><p>知乎好问题：<a href="https://www.zhihu.com/question/67473950" target="_blank" rel="noopener">为什么有的人年纪轻轻却思想深度远高于常人？</a>.</p>
+<blockquote>
+<p>尼采说过“当你凝视深渊的时候，深渊也在凝视你”。</p>
+</blockquote>
+<blockquote>
+<p>那些很多思想极其有深度的人，思想带给他们的，往往是一面阳光一面悲伤。</p>
+</blockquote>
+<blockquote>
+<p>但不管是哪一面，我们往往没看到，他们更早之前在深渊边缘摸爬滚打的样子。白天的风轻云淡，或许深夜就会掩涕长叹。</p>
+</blockquote>
+<blockquote>
+<p>没有什么是不需要代价的，一切人格都来自于过往的经历，更何况是有深度的思想，这种无形却重于泰山的东西，怕是要看过千山万水世间百态罢。</p>
+</blockquote>
+<p>作者：Layne<br>链接：<a href="https://www.zhihu.com/question/67473950/answer/833637790" target="_blank" rel="noopener">https://www.zhihu.com/question/67473950/answer/833637790</a><br>来源：知乎</p>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>thought</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo 提交谷歌搜索收录</title>
     <url>/2019/12/13/hexo-google-record/</url>
     <content><![CDATA[<p>下午花了两个多小时试图配置博客以让谷歌搜索引擎收录，查看<a href="https://www.itrhx.com/2019/09/17/A48-submit-search-engine-inclusion/" target="_blank" rel="noopener">教程</a>，本以为是很简单的工作，没想到花了很久，还没弄好，问题出在用 Google Search Console 提交站点地图时出现 “无法获取”的状态， 正常情况下是 “成功”。</p>
 <p>查了好久也，没找到原因,明天再试试吧，这里仅记录一下过程</p>
 <p>1、跟着教程一系列操作就行。</p>
 <p>2、中间回忆起来自己把域名搭在freenom上面，期间需要在此网站上验证域名，即添加谷歌生成的一串txt验证。</p>
-<p>3、期间还需对站点的配置文件进行配置等，可参见网上其他添加百度谷歌收录等帖子。</p>
-<p>4、生产sitemap站点地图时，不要用网上的网站生成再放到博客根目录下，直接用命令安装插件：</p>
+<p>3、期间还需对站点的config配置文件进行配置等(也不知道有的配置到底起作用没)，可参见网上其他添加百度谷歌收录等帖子。</p>
+<p>4、生产sitemap站点地图时，<strong>不要用网上的网站生成再放到博客根目录下</strong>，直接用命令安装插件：</p>
 <pre><code>npm install hexo-generator-sitemap --save</code></pre><p>会自动生成sitemap.xml 文件的。</p>
 <p>5、博客的根目录，如需要，可以将需要放在根目录的文件放在 public 文件夹下，因为public文件夹会部署到GitHub上。</p>
+<p>6、很多方法都试过，包括<a href="https://javahikers.github.io/2019/06/16/hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%94%B6%E5%BD%95%E8%B0%B7%E6%AD%8C%E7%9A%84%E8%AF%A6%E7%BB%86%E8%BF%87%E7%A8%8B/" target="_blank" rel="noopener">添加robots.txt</a>, 还是没弄好。难道真的是谷歌问题，要等它定期检查网站吗！</p>
+<blockquote>
+<p>“robots.txt”文件会告诉搜索引擎它们是否可以访问您网站的各个部分并执行抓取。</p>
+</blockquote>
+<p>7、google search console couldn’t fetch sitemap</p>
 ]]></content>
       <categories>
         <category>web tech</category>
@@ -110,6 +140,20 @@
 <p>2、<a href="https://seekbetter.me/" target="_blank" rel="noopener">中国个人独立博客</a>.</p>
 <p>3、知乎：<a href="https://www.zhihu.com/question/27368268" target="_blank" rel="noopener">计算机专业大学生应该在大学四年踏实学哪些东西?</a>.</p>
 <p>4、进程间通信之共享内存（IPC-shared memory）: <a href="https://www.cnblogs.com/youngerchina/p/5624525.html" target="_blank" rel="noopener">参考</a>. 进程间通信和   <a href="http://www.cleey.com/blog/single/id/790.html" target="_blank" rel="noopener">多线程</a> 的区别是什么？</p>
+<p>5、知乎好问题：<a href="https://www.zhihu.com/question/67473950" target="_blank" rel="noopener">为什么有的人年纪轻轻却思想深度远高于常人？</a>.</p>
+<blockquote>
+<p>尼采说过“当你凝视深渊的时候，深渊也在凝视你”。</p>
+</blockquote>
+<blockquote>
+<p>那些很多思想极其有深度的人，思想带给他们的，往往是一面阳光一面悲伤。</p>
+</blockquote>
+<blockquote>
+<p>但不管是哪一面，我们往往没看到，他们更早之前在深渊边缘摸爬滚打的样子。白天的风轻云淡，或许深夜就会掩涕长叹。</p>
+</blockquote>
+<blockquote>
+<p>没有什么是不需要代价的，一切人格都来自于过往的经历，更何况是有深度的思想，这种无形却重于泰山的东西，怕是要看过千山万水世间百态罢。</p>
+</blockquote>
+<p>作者：Layne<br>链接：<a href="https://www.zhihu.com/question/67473950/answer/833637790" target="_blank" rel="noopener">https://www.zhihu.com/question/67473950/answer/833637790</a><br>来源：知乎</p>
 ]]></content>
       <categories>
         <category>PhD</category>
