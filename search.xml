@@ -40,7 +40,18 @@
 <blockquote>
 <p>“robots.txt”文件会告诉搜索引擎它们是否可以访问您网站的各个部分并执行抓取。</p>
 </blockquote>
-<p>7、google search console couldn’t fetch sitemap</p>
+<p>7、问题描述：google search console couldn’t fetch sitemap</p>
+<h2 id="更新："><a href="#更新：" class="headerlink" title="更新："></a>更新：</h2><p>由于站点地图没有成功部署，心有不甘，今天搜索“谷歌网站验证成功但是站点地图失败”偶尔发现一篇<a href="https://www.wzblog.fun/posts/935f4e25/" target="_blank" rel="noopener">博文</a>，于是按照这做了一遍试一试，将所有的yexun.ml换成hanyangyexun.github.io, 没想到成功了。</p>
+<p>所以现在hanyangyexun.github.io的站点地图是成功的，那么应该会被谷歌索引，而yexun.ml的地图没有成功，会被谷歌索引吗？</p>
+<p>刚发现谷歌已经收录了所有的yexun.ml网页，而github.io也被收录， 最后的效果达到了。</p>
+<p>只是没想到实现过程是这个样子稍有曲折！</p>
+<p>所以是不是可以再把上文的hanyangyexun.github.io换成yexun.ml试试呢。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>我觉得问题还是在验证网页所有权时，应该<strong>选择第二种网址前缀而不是第一种网域</strong>。因为谷歌可能在站点地图提交时有bug未解决！</p>
+<h3 id="彩蛋"><a href="#彩蛋" class="headerlink" title="彩蛋:"></a><a href="https://github.com/Louiszhai/Louiszhai.github.io/issues/5" target="_blank" rel="noopener">彩蛋:</a></h3><blockquote>
+<p>听起来感觉你可能不太熟悉hexo，hexo中写markdown文章，直接在其source/_post目录新增<em>.md即可，完成后hexo g打包编译，hexo d上传就行。之所以能*</em>将打包到public目录的文件上传到github**，主要是因为config.yml文件中包含如下配置：</p>
+</blockquote>
+<pre><code>deploy:
+    repo: git@github.com:......git</code></pre><p>所以每次hexo g d命令的意思是先打包再上传！</p>
 ]]></content>
       <categories>
         <category>web tech</category>
