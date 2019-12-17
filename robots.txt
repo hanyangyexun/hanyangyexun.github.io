@@ -10,4 +10,4 @@ Disallow: /images/
 Disallow: /js/
 Disallow: /css/
 
-Sitemap: http://yexun.ml/sitemap.xml
+Sitemap: http://hanyangyexun.github.io/sitemap.xml
