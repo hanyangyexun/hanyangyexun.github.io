@@ -132,7 +132,7 @@
 <meta property="og:site_name" content="YEASUNNY">
 <meta property="og:description" content="下面是在学习C时值得记录的话：  内存条， 元器件， 这些元器件，实际上就是电路；电路的电压会变化，要么是 0V，要么是 5V，5V 是通电，用1来表示，0V 是断电，用0来表示。所以，一个元器件有2种状态，0 或者 1。1个元器件称为1比特（Bit）或1位  #include命令的作用也仅仅是将头文件中的文本复制到当前文件，然后和当前文件一起编译  int a;这个语句的意思是：在内存中找一块区">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-12-29T02:27:07.693Z">
+<meta property="og:updated_time" content="2020-01-03T05:46:29.793Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -424,7 +424,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  1.2k
+                  1.8k
                 </span>
               
 
@@ -440,7 +440,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  4
+                  6
                 </span>
               
             </div>
@@ -515,6 +515,45 @@ scanf(&quot;%s&quot;, url); //url为字符串可以加&amp;也可以不加&amp;<
 2. break：在循环体内结束整个循环过程
 3. continue ：结束本次的循环，直接进行下一次的循环</code></pre></li>
 <li><p>函数声明和函数定义不一样，头文件中包含的都是函数声明，而不是函数定义，函数定义都放在了其它的源文件中，这些源文件已经提前编译好了，并以动态链接库或者静态链接库的形式存在</p>
+</li>
+<li><p>在编译之前对源文件进行简单加工的过程，就称为预处理。以#号开头的命令称为预处理命令。</p>
+</li>
+<li><p>C语言提供了多种预处理功能，如宏定义、文件包含、条件编译等</p>
+<pre><code>//不同的平台下引入不同的头文件
+#if _WIN32  //识别windows平台
+#include &lt;windows.h&gt;
+#elif __linux__  //识别linux平台
+#include &lt;unistd.h&gt;
+#endif</code></pre></li>
+<li><p>所谓宏定义，就是用一个标识符来表示一个字符串</p>
+<pre><code>#define N 100</code></pre></li>
+<li><p><code>#if、#elif、#else 和 #endif</code> 都是预处理命令。这种能够根据不同情况编译不同代码、产生不同目标文件的机制，称为条件编译。（联想到用 #if 0 来注释代码）</p>
+</li>
+<li><p>最后需要注意的是，#if 后面跟的是“整型常量表达式”，而 #ifdef 和 #ifndef 后面跟的只能是一个宏名，不能是其他的。</p>
+</li>
+</ol>
+<p><strong>指针</strong></p>
+<ol>
+<li><p>计算机中所有的数据都必须放在内存中，我们将内存中字节的编号称为<strong>地址（Address）或指针（Pointer）</strong>。</p>
+</li>
+<li><p>CPU 访问内存时需要的是地址，而不是变量名和函数名！变量名和函数名只是地址的一种助记符，当源文件被编译和链接成可执行程序后，它们都会被替换成地址。编译和链接过程的一项重要任务就是找到这些名称所对应的地址。</p>
+</li>
+<li><p>需要注意的是，虽然变量名、函数名、字符串名和数组名在本质上是一样的，它们都是地址的助记符，但在编写代码的过程中，我们认为变量名表示的是数据本身，而函数名、字符串名和数组名表示的是代码块或数据块的首地址。</p>
+</li>
+<li><p>也就是说，定义指针变量时必须带 <code>*</code>，给指针变量赋值时不能带 <code>*</code>。</p>
+</li>
+<li><p>定义指针变量时的<code>*</code>和使用指针变量时的<code>*</code>意义完全不同。（<strong>用熟了就习惯了</strong>）</p>
+<pre><code>int *p;
+p = &amp;a;
+*p = 100;</code></pre></li>
+<li><p>数组指针： 数组名可以认为是一个指针，它指向数组的第 0 个元素。在C语言中，我们将第 0 个元素的地址称为数组的首地址。</p>
+</li>
+<li><p>字符串指针：指向字符串的指针。此字符串分为“字符串数组”和“字符串常量”</p>
+<pre><code>char str[] = &quot;http://c.biancheng.net&quot;;
+char *pstr = str;
+
+char *str = &quot;http://c.biancheng.net&quot;;</code></pre></li>
+<li><p>字符串指针就是指向一个首地址而已。</p>
 </li>
 </ol>
 
@@ -670,7 +709,7 @@ scanf(&quot;%s&quot;, url); //url为字符串可以加&amp;也可以不加&amp;<
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">20</span>
+                  <span class="site-state-item-count">22</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -729,7 +768,7 @@ scanf(&quot;%s&quot;, url); //url为字符串可以加&amp;也可以不加&amp;<
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

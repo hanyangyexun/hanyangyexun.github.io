@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>准备IEC 62872-2会议决议</title>
+    <url>/2020/01/03/18-IEC-62872-2/</url>
+    <content><![CDATA[<p>在去伯克利开WG 17会议之前的一个星期主要是处理收到的comments，按照教授的要求就是，在开会之前就应该准备好comment resolution，然后再在会上讨论。</p>
+<p>不知道以前的惯例是怎样，这个是我们自己的项目然后拿到WG 17来做，可以看出教授的要求很严，不停地和他通邮件确定最后的版本（主要由Lisa，WeIMin和我来准备resolution，教授也亲自给出了自己的建议）。</p>
+<p>总结就是：</p>
+<p>我们自己拿出去的东西，要给别人看，或者要一起讨论的东西，一定要准备的十全十美（包括投出去的论文，以及展览等）。</p>
+<p>不得不说要求确实严格，改的过程也可以看出Lisa对任何事情也是非常认真的对待，想到有时候自己的态度，得向此两位好好学习！</p>
+]]></content>
+      <categories>
+        <category>PhD</category>
+      </categories>
+      <tags>
+        <tag>thought</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>从“时间的朋友”到“极客鞋谈”</title>
+    <url>/2020/01/02/17-jikexietan/</url>
+    <content><![CDATA[<p>今天在看知乎上<a href="https://www.zhihu.com/question/308014777" target="_blank" rel="noopener">如何看待罗振宇2020年《时间的朋友》跨年演讲？</a>时，联想到中国和其他国家的区别（如韩国和日本），联想到极客鞋谈的牛哞哞做过的几期关于去日本旅游的视屏，遂想写下点什么，防止遗忘。</p>
+<p>其实昨天试图想找到该跨年演讲视屏看看，只可惜没找到，只看到一段中国人的结网能力的讲述。但是并没发现罗振宇有多深得观点和见解。</p>
+<p>我很赞同知乎上的一个评价：</p>
+<blockquote>
+<p>建议高认知，以及平日里就经常学习的知识分子不必观看，这演讲适合平日里不怎么学习行业以外的知识和不怎么看书的群体。我也终于明白为什么罗胖上奇葩说的时候会被许多学员挤兑了。奇葩说里的这些人，基本都是985，211毕业的人才，有的还是世界顶尖学府出来的。当然会对罗胖这种“快餐式知识”感到戏谑。姑且就算是比微信公众号好很多的知识吧。这些学霸多年来的学习习惯积累下来的深度学习能力。对于得到这种浮与表面的大众知识，是很难打动他们的。一开始我还为罗胖抱不平，后来随着自己也开始拿起书本阅读的时候。看来是我错了。卸载得到吧，下载微信读书吧。知识不在的得到里，知识依然存在书本里。</p>
+</blockquote>
+<blockquote>
+<p>作者：安扣<br>链接：<a href="https://www.zhihu.com/question/308014777/answer/958603464" target="_blank" rel="noopener">https://www.zhihu.com/question/308014777/answer/958603464</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+</blockquote>
+<p>中国和其他国家的差别，这里不好做出论断，自己亲身真正去体会过的人才有体验和发言权吧，书上看的和听别人说的总归不是自己的经历。</p>
+<p>但是有一点是事实：中国是一个发展中国家，别人是发达国家，高度发达国家；中国是社会主义国家，别人是资本主义国家。</p>
+<p>知识从书本中获取，观点在生活中形成！</p>
+<p>彩蛋：</p>
+<p>联想韩国电影和中国电影的不同之处。</p>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>thought</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>看十三邀有感</title>
     <url>/2019/12/30/16-shisanyao/</url>
     <content><![CDATA[<p>今天在YouTube偶然点开“十三邀”中<a href="https://www.youtube.com/watch?v=gwQPHzReqMU" target="_blank" rel="noopener">一期</a>对话经济学者吴晓波，好奇和学经济的人对话是一种怎样的场景。</p>
@@ -175,6 +216,45 @@ scanf(&quot;%s&quot;, url); //url为字符串可以加&amp;也可以不加&amp;<
 2. break：在循环体内结束整个循环过程
 3. continue ：结束本次的循环，直接进行下一次的循环</code></pre></li>
 <li><p>函数声明和函数定义不一样，头文件中包含的都是函数声明，而不是函数定义，函数定义都放在了其它的源文件中，这些源文件已经提前编译好了，并以动态链接库或者静态链接库的形式存在</p>
+</li>
+<li><p>在编译之前对源文件进行简单加工的过程，就称为预处理。以#号开头的命令称为预处理命令。</p>
+</li>
+<li><p>C语言提供了多种预处理功能，如宏定义、文件包含、条件编译等</p>
+<pre><code>//不同的平台下引入不同的头文件
+#if _WIN32  //识别windows平台
+#include &lt;windows.h&gt;
+#elif __linux__  //识别linux平台
+#include &lt;unistd.h&gt;
+#endif</code></pre></li>
+<li><p>所谓宏定义，就是用一个标识符来表示一个字符串</p>
+<pre><code>#define N 100</code></pre></li>
+<li><p><code>#if、#elif、#else 和 #endif</code> 都是预处理命令。这种能够根据不同情况编译不同代码、产生不同目标文件的机制，称为条件编译。（联想到用 #if 0 来注释代码）</p>
+</li>
+<li><p>最后需要注意的是，#if 后面跟的是“整型常量表达式”，而 #ifdef 和 #ifndef 后面跟的只能是一个宏名，不能是其他的。</p>
+</li>
+</ol>
+<p><strong>指针</strong></p>
+<ol>
+<li><p>计算机中所有的数据都必须放在内存中，我们将内存中字节的编号称为<strong>地址（Address）或指针（Pointer）</strong>。</p>
+</li>
+<li><p>CPU 访问内存时需要的是地址，而不是变量名和函数名！变量名和函数名只是地址的一种助记符，当源文件被编译和链接成可执行程序后，它们都会被替换成地址。编译和链接过程的一项重要任务就是找到这些名称所对应的地址。</p>
+</li>
+<li><p>需要注意的是，虽然变量名、函数名、字符串名和数组名在本质上是一样的，它们都是地址的助记符，但在编写代码的过程中，我们认为变量名表示的是数据本身，而函数名、字符串名和数组名表示的是代码块或数据块的首地址。</p>
+</li>
+<li><p>也就是说，定义指针变量时必须带 <code>*</code>，给指针变量赋值时不能带 <code>*</code>。</p>
+</li>
+<li><p>定义指针变量时的<code>*</code>和使用指针变量时的<code>*</code>意义完全不同。（<strong>用熟了就习惯了</strong>）</p>
+<pre><code>int *p;
+p = &amp;a;
+*p = 100;</code></pre></li>
+<li><p>数组指针： 数组名可以认为是一个指针，它指向数组的第 0 个元素。在C语言中，我们将第 0 个元素的地址称为数组的首地址。</p>
+</li>
+<li><p>字符串指针：指向字符串的指针。此字符串分为“字符串数组”和“字符串常量”</p>
+<pre><code>char str[] = &quot;http://c.biancheng.net&quot;;
+char *pstr = str;
+
+char *str = &quot;http://c.biancheng.net&quot;;</code></pre></li>
+<li><p>字符串指针就是指向一个首地址而已。</p>
 </li>
 </ol>
 ]]></content>
@@ -452,8 +532,8 @@ printf(&quot;writing \&quot;Epson1 off state\&quot; = 0 to Table: %s\n&quot;, co
         <category>PhD</category>
       </categories>
       <tags>
-        <tag>major</tag>
         <tag>updating</tag>
+        <tag>major</tag>
         <tag>study</tag>
       </tags>
   </entry>
@@ -471,8 +551,8 @@ printf(&quot;writing \&quot;Epson1 off state\&quot; = 0 to Table: %s\n&quot;, co
         <category>PhD</category>
       </categories>
       <tags>
-        <tag>updating</tag>
         <tag>thought</tag>
+        <tag>updating</tag>
       </tags>
   </entry>
   <entry>
