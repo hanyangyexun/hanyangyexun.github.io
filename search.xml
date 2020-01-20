@@ -43,7 +43,6 @@
 <p>想到什么再补充…</p>
 ]]></content>
       <categories>
-        <category>life</category>
         <category>work</category>
       </categories>
       <tags>
@@ -590,8 +589,8 @@ printf(&quot;writing \&quot;Epson1 off state\&quot; = 0 to Table: %s\n&quot;, co
         <category>PhD</category>
       </categories>
       <tags>
-        <tag>major</tag>
         <tag>updating</tag>
+        <tag>major</tag>
         <tag>study</tag>
       </tags>
   </entry>
@@ -609,8 +608,8 @@ printf(&quot;writing \&quot;Epson1 off state\&quot; = 0 to Table: %s\n&quot;, co
         <category>PhD</category>
       </categories>
       <tags>
-        <tag>updating</tag>
         <tag>thought</tag>
+        <tag>updating</tag>
       </tags>
   </entry>
   <entry>
