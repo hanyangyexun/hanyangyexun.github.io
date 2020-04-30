@@ -14,12 +14,15 @@
 <ol>
 <li>以前是先把图片存入本地电脑然后commit到git仓库（参见以前博客），现在是可以直接手动上传到Git仓库，然后直接复制链接就行了（搞半天搞糊涂了，还尝试把Git克隆到本地！！）。</li>
 <li>复制链接时应该用的是浏览器打开图片时的，而不是打开之前的。</li>
-<li>视频的插入不是那么容易，因为博客没安装视频音频播放器（除非YouTube等外链），这个以后再弄吧。</li>
+<li>视频的插入不是那么容易，因为博客没安装视频音频播放器（除非YouTube等<strong>外链</strong>），这个以后再弄吧。</li>
 <li>不练果然手生。</li>
 </ol>
 <video id="video" controls="" preload="none" poster="http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.jpg">
 <source id="mp4" src="http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.mp4" type="video/mp4">
-</video>]]></content>
+</video>
+
+<p>视频出自<a href="http://blog.fandong.me/2017/08/25/Markdown-Advance/" target="_blank" rel="noopener">这里</a>。</p>
+]]></content>
       <categories>
         <category>life</category>
       </categories>
@@ -616,8 +619,8 @@ printf(&quot;writing \&quot;Epson1 off state\&quot; = 0 to Table: %s\n&quot;, co
         <category>PhD</category>
       </categories>
       <tags>
-        <tag>updating</tag>
         <tag>major</tag>
+        <tag>updating</tag>
         <tag>study</tag>
       </tags>
   </entry>
@@ -635,8 +638,8 @@ printf(&quot;writing \&quot;Epson1 off state\&quot; = 0 to Table: %s\n&quot;, co
         <category>PhD</category>
       </categories>
       <tags>
-        <tag>thought</tag>
         <tag>updating</tag>
+        <tag>thought</tag>
       </tags>
   </entry>
   <entry>
