@@ -9,7 +9,7 @@
 <p>BTW，刚看了一下之前的博客，感觉很陌生，果然思想遗忘的速度很快！</p>
 <hr>
 <p>下面是添加图片：</p>
-<p>尺寸修改：（不能居中？）</p>
+<p>尺寸修改：（不能居中？）（可以居中，只是markdown没渲染出来）</p>
 <img src="https://raw.githubusercontent.com/hanyangyexun/MyImages/master/me-kobe-jersy.jpg" width = "270" height = "480" div align=center />
 默认：
 
@@ -29,7 +29,13 @@
 <p><strong>更新</strong></p>
 <p>关于问题2， 应该不是视频播放器问题，因为markdown支持video标签插入视频。参见<a href="https://www.dazhuanlan.com/2019/10/09/5d9de855688b9/" target="_blank" rel="noopener">这里</a>。</p>
 <p>这样问题转为，如何把自己的视频生成外链播放，方法可以有：比如上传到YouTube或抖音，即可得到外链。</p>
-]]></content>
+<video width="480" height="320" controls>
+<source src="http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.mp4>
+</video>
+
+<video id="video" controls="" preload="none" poster="http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.jpg">
+<source id="mp4" src="https://www.iesdouyin.com/share/video/6821445553923132683/?region=CN&mid=6821445572289972999&u_code=3b0k96j2d9mm&titleType=title&timestamp=1588241602&utm_campaign=client_share&app=aweme&utm_medium=ios&tt_from=copy&utm_source=copy" type="video/mp4">
+</video>]]></content>
       <categories>
         <category>life</category>
       </categories>
@@ -626,8 +632,8 @@ printf(&quot;writing \&quot;Epson1 off state\&quot; = 0 to Table: %s\n&quot;, co
         <category>PhD</category>
       </categories>
       <tags>
-        <tag>major</tag>
         <tag>updating</tag>
+        <tag>major</tag>
         <tag>study</tag>
       </tags>
   </entry>
@@ -645,8 +651,8 @@ printf(&quot;writing \&quot;Epson1 off state\&quot; = 0 to Table: %s\n&quot;, co
         <category>PhD</category>
       </categories>
       <tags>
-        <tag>updating</tag>
         <tag>thought</tag>
+        <tag>updating</tag>
       </tags>
   </entry>
   <entry>
