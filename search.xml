@@ -32,10 +32,7 @@
 <video width="480" height="320" controls>
 <source src="http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.mp4>
 </video>
-
-<video id="video" controls="" preload="none" poster="http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.jpg">
-<source id="mp4" src="https://www.iesdouyin.com/share/video/6821445553923132683/?region=CN&mid=6821445572289972999&u_code=3b0k96j2d9mm&titleType=title&timestamp=1588241602&utm_campaign=client_share&app=aweme&utm_medium=ios&tt_from=copy&utm_source=copy" type="video/mp4">
-</video>]]></content>
+]]></content>
       <categories>
         <category>life</category>
       </categories>
@@ -632,8 +629,8 @@ printf(&quot;writing \&quot;Epson1 off state\&quot; = 0 to Table: %s\n&quot;, co
         <category>PhD</category>
       </categories>
       <tags>
-        <tag>updating</tag>
         <tag>major</tag>
+        <tag>updating</tag>
         <tag>study</tag>
       </tags>
   </entry>
@@ -651,8 +648,8 @@ printf(&quot;writing \&quot;Epson1 off state\&quot; = 0 to Table: %s\n&quot;, co
         <category>PhD</category>
       </categories>
       <tags>
-        <tag>thought</tag>
         <tag>updating</tag>
+        <tag>thought</tag>
       </tags>
   </entry>
   <entry>
