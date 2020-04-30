@@ -7,11 +7,19 @@
 <p>现在试试远程使用teamview来写博客，也算是更新一下。</p>
 <p>回到韩国再将自己在疫情这段时间的记录上传。</p>
 <p>BTW，刚看了一下之前的博客，感觉很陌生，果然思想遗忘的速度很快！</p>
-<p><img src="https://github.com/hanyangyexun/MyImages/blob/master/me-kobe-jersy.jpg" alt="kobe&#39;s jersey"></p>
+<hr>
+<p>下面是添加图片：</p>
+<p><img src="https://raw.githubusercontent.com/hanyangyexun/MyImages/master/me-kobe-jersy.jpg" alt="kobe&#39;s jersey"></p>
+<p>准备添加一个自己的图片和视频，搞了一下，发现以下问题：</p>
+<ol>
+<li>以前是先把图片存入本地电脑然后commit到git仓库（参见以前博客），现在是可以直接手动上传到Git仓库，然后直接复制链接就行了（搞半天搞糊涂了，还尝试把Git克隆到本地！！）。</li>
+<li>复制链接时应该用的是浏览器打开图片时的，而不是打开之前的。</li>
+<li>视频的插入不是那么容易，因为博客没安装视频音频播放器（除非YouTube等外链），这个以后再弄吧。</li>
+<li>不练果然手生。</li>
+</ol>
 <video id="video" controls="" preload="none" poster="http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.jpg">
-<source id="mp4" src="https://github.com/hanyangyexun/MyImages/blob/master/jump%20the%20hoop.mp4" type="video/mp4">
-</video>
-]]></content>
+<source id="mp4" src="http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.mp4" type="video/mp4">
+</video>]]></content>
       <categories>
         <category>life</category>
       </categories>
@@ -608,8 +616,8 @@ printf(&quot;writing \&quot;Epson1 off state\&quot; = 0 to Table: %s\n&quot;, co
         <category>PhD</category>
       </categories>
       <tags>
-        <tag>major</tag>
         <tag>updating</tag>
+        <tag>major</tag>
         <tag>study</tag>
       </tags>
   </entry>
@@ -627,8 +635,8 @@ printf(&quot;writing \&quot;Epson1 off state\&quot; = 0 to Table: %s\n&quot;, co
         <category>PhD</category>
       </categories>
       <tags>
-        <tag>updating</tag>
         <tag>thought</tag>
+        <tag>updating</tag>
       </tags>
   </entry>
   <entry>
