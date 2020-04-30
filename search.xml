@@ -29,9 +29,7 @@
 <p><strong>更新</strong></p>
 <p>关于问题2， 应该不是视频播放器问题，因为markdown支持video标签插入视频。参见<a href="https://www.dazhuanlan.com/2019/10/09/5d9de855688b9/" target="_blank" rel="noopener">这里</a>。</p>
 <p>这样问题转为，如何把自己的视频生成外链播放，方法可以有：比如上传到YouTube或抖音，即可得到外链。</p>
-<video width="480" height="320" controls>
-<source src="http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.mp4>
-</video>
+<p>亲测不行，无法生成mp4文件。</p>
 ]]></content>
       <categories>
         <category>life</category>
