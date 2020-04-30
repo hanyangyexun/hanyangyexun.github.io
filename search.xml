@@ -9,6 +9,10 @@
 <p>BTW，刚看了一下之前的博客，感觉很陌生，果然思想遗忘的速度很快！</p>
 <hr>
 <p>下面是添加图片：</p>
+<p>尺寸修改：（不能居中？）</p>
+<img src="https://raw.githubusercontent.com/hanyangyexun/MyImages/master/me-kobe-jersy.jpg" width = "270" height = "480" div align=center />
+默认：
+
 <p><img src="https://raw.githubusercontent.com/hanyangyexun/MyImages/master/me-kobe-jersy.jpg" alt="kobe&#39;s jersey"></p>
 <p>准备添加一个自己的图片和视频，搞了一下，发现以下问题：</p>
 <ol>
@@ -22,6 +26,9 @@
 </video>
 
 <p>视频出自<a href="http://blog.fandong.me/2017/08/25/Markdown-Advance/" target="_blank" rel="noopener">这里</a>。</p>
+<p><strong>更新</strong></p>
+<p>关于问题2， 应该不是视频播放器问题，因为markdown支持video标签插入视频。参见<a href="https://www.dazhuanlan.com/2019/10/09/5d9de855688b9/" target="_blank" rel="noopener">这里</a>。</p>
+<p>这样问题转为，如何把自己的视频生成外链播放，方法可以有：比如上传到YouTube或抖音，即可得到外链。</p>
 ]]></content>
       <categories>
         <category>life</category>
