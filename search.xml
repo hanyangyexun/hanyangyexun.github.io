@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>远程操作博客</title>
+    <url>/2020/04/30/20-remote-test/</url>
+    <content><![CDATA[<p>马上就进入五月份了，在家呆了一百多天，依然没有回到韩国的确切时间！</p>
+<p>现在试试远程使用teamview来写博客，也算是更新一下。</p>
+<p>回到韩国再将自己在疫情这段时间的记录上传。</p>
+<p>BTW，刚看了一下之前的博客，感觉很陌生，果然思想遗忘的速度很快！</p>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>COVID-19</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Trip to USA</title>
     <url>/2020/01/17/19-trip-to-USA/</url>
     <content><![CDATA[<p>从2020年1月6日到12日（韩国时间），由于项目需要，参加了位于美国加州伯克利的IEC TC 65 JWG 17的会议。</p>
@@ -589,8 +604,8 @@ printf(&quot;writing \&quot;Epson1 off state\&quot; = 0 to Table: %s\n&quot;, co
         <category>PhD</category>
       </categories>
       <tags>
-        <tag>updating</tag>
         <tag>major</tag>
+        <tag>updating</tag>
         <tag>study</tag>
       </tags>
   </entry>
@@ -608,8 +623,8 @@ printf(&quot;writing \&quot;Epson1 off state\&quot; = 0 to Table: %s\n&quot;, co
         <category>PhD</category>
       </categories>
       <tags>
-        <tag>thought</tag>
         <tag>updating</tag>
+        <tag>thought</tag>
       </tags>
   </entry>
   <entry>
