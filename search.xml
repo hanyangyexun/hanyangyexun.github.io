@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Git and Vim</title>
+    <url>/2020/05/09/22-git-and-vim/</url>
+    <content><![CDATA[<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>刚刚在GitHub上布置自己的图床时，遇到一点问题，原因在于自己对Git命令不熟不了解。</p>
+<p>以前是直接将图片拖到Git的仓库里面，今天想在该仓库里建一个文件夹，可惜没有这个操作，只能建立文件。</p>
+<p>于是只能在本地建立，再同步到Git。问题来了：</p>
+<p>Git仓库和本地文件夹不一样怎么办？网上查<a href="https://blog.csdn.net/liman65727/article/details/81772736" target="_blank" rel="noopener">如何同步</a>：</p>
+<pre><code>1.git fetch &lt;remote&gt; 将远程代码下载到本地。
+2.git pull &lt;remote&gt; 将远程分支与本地分支同步，并且合并。
+3.之后可以看到本地文件夹中已经有了远程仓库的文件，然后可以开始提交代码了.
+    git add .
+    git commit -m &quot;xx&quot;
+    git push</code></pre><p>每次同步遵循这几步即可。</p>
+<h2 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h2><p>Vim编辑器有三种模式：</p>
+<pre><code>i 进入编辑模式
+esc 退回命令模式
+：wq 尾行模式 保存并退出</code></pre><p>由于用的不多，自己老是忘记。</p>
+<p>PS:上传图片时，记得先预览图片方向，防止旋转。</p>
+]]></content>
+      <categories>
+        <category>web tech</category>
+        <category>travel</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>Vim</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于照片</title>
     <url>/2020/05/08/21-guanyuzhaopian/</url>
     <content><![CDATA[<p>图片往往比文字能传达的信息多，图片的力量是强大的，给人视觉的冲击。</p>
@@ -665,8 +693,8 @@ printf(&quot;writing \&quot;Epson1 off state\&quot; = 0 to Table: %s\n&quot;, co
         <category>PhD</category>
       </categories>
       <tags>
-        <tag>updating</tag>
         <tag>major</tag>
+        <tag>updating</tag>
         <tag>study</tag>
       </tags>
   </entry>
@@ -684,8 +712,8 @@ printf(&quot;writing \&quot;Epson1 off state\&quot; = 0 to Table: %s\n&quot;, co
         <category>PhD</category>
       </categories>
       <tags>
-        <tag>thought</tag>
         <tag>updating</tag>
+        <tag>thought</tag>
       </tags>
   </entry>
   <entry>
