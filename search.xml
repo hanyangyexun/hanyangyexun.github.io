@@ -12,7 +12,8 @@
 3.之后可以看到本地文件夹中已经有了远程仓库的文件，然后可以开始提交代码了.
     git add .
     git commit -m &quot;xx&quot;
-    git push</code></pre><p>每次同步遵循这几步即可。</p>
+    git push</code></pre><p>每次同步遵循这几步即可。(好像重复23即可，pull=fetch+merge)</p>
+<p>需对<a href="https://blog.csdn.net/qq_36113598/article/details/78906882" target="_blank" rel="noopener">Git命令</a>更加了解！</p>
 <h2 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h2><p>Vim编辑器有三种模式：</p>
 <pre><code>i 进入编辑模式
 esc 退回命令模式
@@ -20,8 +21,7 @@ esc 退回命令模式
 <p>PS:上传图片时，记得先预览图片方向，防止旋转。</p>
 ]]></content>
       <categories>
-        <category>web tech</category>
-        <category>travel</category>
+        <category>web tech - travell</category>
       </categories>
       <tags>
         <tag>Git</tag>
@@ -423,8 +423,8 @@ char *str = &quot;http://c.biancheng.net&quot;;</code></pre></li>
         <category>study</category>
       </categories>
       <tags>
-        <tag>note</tag>
         <tag>C</tag>
+        <tag>note</tag>
       </tags>
   </entry>
   <entry>
