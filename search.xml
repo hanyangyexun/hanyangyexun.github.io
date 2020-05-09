@@ -21,7 +21,8 @@ esc 退回命令模式
 <p>PS:上传图片时，记得先预览图片方向，防止旋转。</p>
 ]]></content>
       <categories>
-        <category>web tech - travell</category>
+        <category>web tech</category>
+        <category>travel</category>
       </categories>
       <tags>
         <tag>Git</tag>
@@ -423,8 +424,8 @@ char *str = &quot;http://c.biancheng.net&quot;;</code></pre></li>
         <category>study</category>
       </categories>
       <tags>
-        <tag>C</tag>
         <tag>note</tag>
+        <tag>C</tag>
       </tags>
   </entry>
   <entry>
