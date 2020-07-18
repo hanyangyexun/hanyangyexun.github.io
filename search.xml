@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>七月下旬</title>
+    <url>/2020/07/18/25-endofjuly/</url>
+    <content><![CDATA[<p><img src="https://raw.githubusercontent.com/hanyangyexun/MyImages/master/image_all/4-Busan2.jpg" alt="韩国东海"></p>
+<p>照片应该是在韩国东海某海滩拍摄的，记忆模糊了，误以为是第二次去釜山时所拍。</p>
+<p>已经七月下旬了，希望近期会有复学好消息。</p>
+<p>时间久了，想回复正常在校生活了。</p>
+<p>问题一个一个的解决了，论文也接收了。</p>
+<p>意味着可以开始下一步的研究了。</p>
+<p>还有很多事情没做，却也不想去行动。</p>
+<p>每天每天的重复着。</p>
+<p>想去某个地方旅游几天了，</p>
+<p>一个人也是不可能的。</p>
+<hr>
+<p>PS:还是得经常更新，以熟悉操作。<br>上传图片：<br><code>git pull https://github.com/hanyangyexun/MyImages.git</code><br><code>git add .</code><br><code>git commit -m xxx (not &quot;xxx&quot;)</code><br><code>git push</code></p>
+]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>思虑</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>六月底了</title>
     <url>/2020/06/21/24-endofjune/</url>
     <content><![CDATA[<p><img src="https://raw.githubusercontent.com/hanyangyexun/MyImages/master/image_all/3-Busan.jpg" alt="釜山某海滩"></p>
@@ -13,10 +36,10 @@
 <p>总还是应该热爱和享受生活。</p>
 ]]></content>
       <categories>
-        <category>思虑</category>
+        <category>life</category>
       </categories>
       <tags>
-        <tag>life</tag>
+        <tag>思虑</tag>
       </tags>
   </entry>
   <entry>
@@ -742,8 +765,8 @@ printf(&quot;writing \&quot;Epson1 off state\&quot; = 0 to Table: %s\n&quot;, co
         <category>PhD</category>
       </categories>
       <tags>
-        <tag>updating</tag>
         <tag>major</tag>
+        <tag>updating</tag>
         <tag>study</tag>
       </tags>
   </entry>
@@ -761,8 +784,8 @@ printf(&quot;writing \&quot;Epson1 off state\&quot; = 0 to Table: %s\n&quot;, co
         <category>PhD</category>
       </categories>
       <tags>
-        <tag>thought</tag>
         <tag>updating</tag>
+        <tag>thought</tag>
       </tags>
   </entry>
   <entry>
