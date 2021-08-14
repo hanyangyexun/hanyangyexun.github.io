@@ -105,7 +105,7 @@
 <p>只是应该是国内的缘故，访问github可能会出现问题，导致了hexo deploy的时候会报错。Timeout等。如下图。</p>
 <p><img src="https://raw.githubusercontent.com/hanyangyexun/BlogImageNew/master/31-1.png" alt="Timeout"></p>
 <p>不过应该没关系，稍等一会，就可以在yexun.ml发现更新了。</p>
-<p>但是像下图就不行。</p>
+<p>但是像下图就不行。timeout 也不行</p>
 <p><img src="https://raw.githubusercontent.com/hanyangyexun/BlogImageNew/master/31-3.png" alt="error"></p>
 <p>得翻墙才能顺畅访问github.</p>
 <p>push图片也是一样，很慢（5分钟吧）</p>
