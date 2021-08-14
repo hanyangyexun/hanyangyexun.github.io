@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Roboto Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180x180.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="note,PnP," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="近一周，PnP项目终于到了尾声，PnP的基本效果（教授想要的）可以实现了，就差web UI的实现。前一段时间还在担心项目完不成导致过年回家休假受到影响。在紧锣密鼓的测试之下，现在心里一块石头总算落地。 我觉得现在是时候记录一下关于这个项目的所有，以便日后回顾起来有点笔记作为参考。说来奇怪，总觉得自己可以记住经历的所有事情的细节，所以不想记录，可事实是时间一久，所有记忆就会淡化。所以记录是必要的。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Summary of 2019 Plug-and-Produce Project">
+<meta property="og:url" content="http://hanyangyexun.github.io/2019/12/29/15-PnPproject-summary/index.html">
+<meta property="og:site_name" content="YEASUNNY">
+<meta property="og:description" content="近一周，PnP项目终于到了尾声，PnP的基本效果（教授想要的）可以实现了，就差web UI的实现。前一段时间还在担心项目完不成导致过年回家休假受到影响。在紧锣密鼓的测试之下，现在心里一块石头总算落地。 我觉得现在是时候记录一下关于这个项目的所有，以便日后回顾起来有点笔记作为参考。说来奇怪，总觉得自己可以记住经历的所有事情的细节，所以不想记录，可事实是时间一久，所有记忆就会淡化。所以记录是必要的。">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-12-29T02:28:28.000Z">
+<meta property="article:modified_time" content="2019-12-30T07:06:12.948Z">
+<meta property="article:author" content="Xun Ye">
+<meta property="article:tag" content="note">
+<meta property="article:tag" content="PnP">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://hanyangyexun.github.io/2019/12/29/15-PnPproject-summary/"/>
+
+
+
+
+
+  <title>Summary of 2019 Plug-and-Produce Project | YEASUNNY</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">YEASUNNY</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">welcome to my land</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+            About
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://hanyangyexun.github.io/2019/12/29/15-PnPproject-summary/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xun Ye">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YEASUNNY">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Summary of 2019 Plug-and-Produce Project</h2>
+        
+
+        <div class="post-meta">
+		  
+          
+		  <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-29T10:28:28+08:00">
+                2019-12-29
+              </time>
+            
+
+            
+
+            
+          </span>
+		  
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/project/" itemprop="url" rel="index">
+                    <span itemprop="name">project</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/12/29/15-PnPproject-summary/" class="leancloud_visitors" data-flag-title="Summary of 2019 Plug-and-Produce Project">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  4.2k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  14
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>近一周，PnP项目终于到了尾声，PnP的基本效果（教授想要的）可以实现了，就差web UI的实现。前一段时间还在担心项目完不成导致过年回家休假受到影响。在紧锣密鼓的测试之下，现在心里一块石头总算落地。</p>
+<p>我觉得现在是时候记录一下关于这个项目的所有，以便日后回顾起来有点笔记作为参考。说来奇怪，总觉得自己可以记住经历的所有事情的细节，所以不想记录，可事实是时间一久，所有记忆就会淡化。所以记录是必要的。</p>
+<p><strong>这里我尽量只记录事情发展以及项目经验， 不掺杂表达自己的想法。</strong></p>
+<h2 id="动机"><a href="#动机" class="headerlink" title="动机"></a>动机</h2><p>时间退回到2018年12月圣诞节自由，IEM杂志送来审稿结果，在结果里面一位审稿人提到了Plug-and-Produce这个概念以及一份文档，这份文档之前已经学习过，在我准备好回复，提交终稿之后，教授提出下一步的研究就是PnP 以及composite component，先从PnP开始。</p>
+<p>在中国过年休假时，收到教授邮件，提出使用3个不同厂家的robot来实现PnP，可能他是在沈阳新松看了别人的生产线还是怎么的，一心想自己做这个。</p>
+<p>休假来之后，3、4月份开始着手购买robot，并阅读相关PnP的论文。</p>
+<p>到了7月份左右，参加KUKA的培训（韩语）。并且看一些KUKA文档，熟悉工业机器人的术语。</p>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>十月份，KUKA机器人才运达实验室，安装好基座后，<strong>首先的一个目标是让机器人动起来。</strong>然而达到这个目标很是曲折，因为是韩国人负责安装的，我并不知道，安装到什么程度了，什么东西没装，什么接口没连接，直接导致我无法按照操作手册进行操作，最后直接问韩国人才在T1模式下手动操控机器人。</p>
+<p>接着问题就是<strong>控制器X11 I/O安全接口</strong>,好像是如果接线没接好，是不能再Automation模式下自动运行的。为此在网上查找了很多很多（有一个叫kukarobotforum的网站，一些专家会在上面解答问题），以及让韩国人询问kuka公司如何接线X11,但是收到接线图后，开始接线，接线又是一个大问题，要进行焊接，在一个小小的55针connector上（诶，这个好像是七八月份的事情！），又没有很好的焊枪，如何焊好！就算自己勉强焊好，以后除了问题，怎么办！在中国的话，淘宝买一个免焊接的55针连接头简直太简单，可是韩国没有！而且由于缺乏经验，胡乱使用了<strong>用于焊接的一根一根的针接头</strong>，还好并没有太破坏，最后意识过来其作用时，还可以再用。</p>
+<p>回到接线，公司提供的接线图是不对的，而且没有清晰地标注，很是让人心烦，因为担心接错线导致机器人故障。最后在网上找到一个帖子，别人手把手的告诉怎么接X11口，遂按照着同样操作一波，终于x11口接完控制器没报错。而且也没有焊接，只是用针接头接到connector上。</p>
+<p>事后发现自己操作的是叫做<strong>短接</strong>，公司提供的接线图应该是要外接一个<strong>紧急停止按钮</strong>。这就是区别所在。</p>
+<p><strong>还有，不要一味的遵照别人的说法去做事情，除非是别人做过同样的事情。在那做种不可恢复的动手前最好自己先分析分析，不知道的接头，连线先网上查一查。不要盲目的抱着尝试的心态瞎操作。</strong></p>
+<p>再一个就是将robot送往JS tech设计公司进行组装，最后做成三个机器人加一个转台的系统，包括加传感器和信号灯，已及抓爪。<strong>说到这个系统，真的是，所有的事情都可以说是我一个人在设计，都是我在想着怎么更好的展示这个系统。没人给你需求，没人告诉你这个系统该是一个什么样子。</strong>话说回来，送去之后，自己就觉着没什么事了，可是事情远没这么简单。</p>
+<p>和韩国成员沟通确实是一大问题，他只一句话，不，是几个词，告诉你设计公司要什么，并解释不清楚为什么要这个。</p>
+<p>具体的就是，第一，kuka的X12 I/O 控制口，需要提供给设计公司X12的每一I/O口的引脚（也是55针），哪些是输入，哪些是输出，哪些是电源，哪些是接地。这些其实都是需要我去了解，让后和设计公司沟通，以便他们可以进行接线传感器，灯，抓爪。</p>
+<p>由于之前我并没有这些硬件经验，再也没在kuka手册里看到这些内容，所以就没在意，从而导致在设计中期，去往设计公司看别人的装配效果时，自己的kuka部分毫无进展，反而另外两个EPSON基本安装好，当时心里真的是一万个***， 在韩国和外面的人做一个事情真的这么难吗！！！</p>
+<p>去公司几次之后，终于忍不住，直接告诉韩国人必须对我的kuka上心，否则直接汇报教授。这样才一步一步慢慢完成一些工作。</p>
+<p>包括，X12接口，kuka并不提供接头以及线，由于不想自己焊接，解决办法（自己想的）是直接从EPSON公司买接头，再网上买一个公母转换线，两者相连即可。这样最省事情！但是得注意EPSON和库卡的55针相匹配。</p>
+<p>接着的问题是，实际测试时，有的sensor和灯的IO接线并不对,归根结底还是和公司的沟通问题。在韩国人的帮助下，最后系统总算是组装完毕，基本的IO也正常。期间</p>
+<ol>
+<li><p>更换过一次电源，因为在测试灯和传感器时，24v, 27v,以及PNP还是NPN类型（即高电平还是低电平触发），可能是自己接线不小心短接了，导致电源坏了。究其原因一是自己对这方面不了解，二是工具贫乏，导致测试环境恶劣。</p>
+</li>
+<li><p>内部电源还是外部电源，因为kuka控制器内部提供电源，设计公司也提供了电源接线，这两部分会导致冲突，最后在咨询kuka之后，决定用kuka内部电源给其他设备供电，期间又损坏保险丝，以及导致beckhofer IO module故障，遂再次进行更换，并从kuka控制器电路板上面接出电源线<br>到设计公司留出来的正负极。中间还是自己手动接线！！！最后还是sensor的mapping有点问题，改改到正确接线就好。究其原因一是自己没有好好了解kuka控制器内部结构，二是沟通问题导致出现各种小错误。</p>
+</li>
+</ol>
+<p>关于gripper, gripper也是一个很复杂的控制，必须得读文档，了解需要几根IO口来进行控制，如何通过IO控制其开和闭。这些是韩国人搞清楚的，我直接用就行，因为这时我在搞<strong>一个叫做sequence diagram的东西。很是花了时间和精力。</strong>因为教授觉得先应该理论上搞定所有逻辑，和信息从哪里传到哪里，然后实际实现完全按照理论来进行即可。试问对于新东西，怎么可能在什么都不知道的情况下，不动手操作，就可以理论的描绘出所有事情！！！这是一个有项目经验的人该有的理念吗！还有，什么是实际的信息流，什么是理论的信息流，这两者并不是完全相吻合的！！！与其浪费时间做这些没用的事情，还不如实际操作，出问题进行有效的沟通。但并不是说在实际做之前不进行理论的规划。</p>
+<p>写到这里，深知一个团队里面的沟通，以及一个懂技术的领导的重要性。</p>
+<p>期间还有一件事情就是，转台都已经做好了，教授觉得不像PnP,于是又提出一种抓取方案，并要我们想如何花最少成本去改进转台，试问一个并不是PnP的东西，换一个抓取方案就可以是PnP了吗？？？一浪费钱，二显示出自己的业余。（不过有时候，在让别人理解自己做的事情时，他还是会有好的想法如何去更清楚的传递信息给别人）。</p>
+<p>总的来说，要求一直在变，一直在提高，这就导致事情多，可能无法按照进度完成。（参加2020年的德国汉诺威展览，不记得是什么时候有的这个目标，不过2019年他们是去参观过汉诺威的。）</p>
+<h2 id="关于KUKA机器人"><a href="#关于KUKA机器人" class="headerlink" title="关于KUKA机器人"></a>关于KUKA机器人</h2><p>不可否认，即使在无法和其他人交流的情况下，自己通过操作机器人，还是学到了很多东西，增加了一些硬件经验。虽说过程是一步一步摸索，有时候些许痛苦一些。不过以后应该将其看淡，关注事情本身，不要产生太多情绪。（即使有）</p>
+<p>KUKA的产品的确不错（从后面的测试可以知道），只是售后服务（不提供某些配件）差一点。</p>
+<p>KUKA机器人控制器可以通过Ethernet/TCP 和外部通信（EthernetKRL），当然也可以采用其他通信方式，比如EtherCat，也就是采用PLC控制吧。说到这里，kuka的“外部自动模式”还没搞清楚怎么使用（接外部控制器，如PLC）。当时摸索EthernetKrl也是用了很久，也和kuka工程师通过几封邮件。试想，如果直接和工程师面谈，一下午时间，所有的疑惑不就可以解决吗！何必浪费那么多时间呢。</p>
+<p>在进行KRL编程时（.src 和.dat文件），参见了网上的一个源码实例，一个需要注意的问题是，应该先创建KRL代码，然后再进行手动示教添加运行代码。</p>
+<p>其次，KRL通过TCP和外部TCP server进行通信时传输的是XML格式的数据，KRL有一个内部XML模板，按照这个模板解析和封装数据。</p>
+<p>KRL程序我感觉就是一个低配版的c语言，它不能很好地支持复杂的逻辑（比如if…else语句不能有超过十个的分支吧，实测），因此我只能想办法在有限的逻辑内完成机器人的抓取工作。还好可以完成。</p>
+<p>其次，kuka没有提供KRL的详细的语法，所以也是只能摸索，出现bug，调试直到没有bug.</p>
+<p>具体的详细kuka编程的经验可以参见当时做的手记，学习历程可以参见每周开会的PPT。</p>
+<p>目前对于kuka的学习孩子是初级的，我们做的所有东西都感觉只停留在了初级的水平（初级意思是能使用其基本功能）。</p>
+<h2 id="整体的项目测试"><a href="#整体的项目测试" class="headerlink" title="整体的项目测试"></a>整体的项目测试</h2><p>在开始编写各部分代码实现各部分功能时，重要的问题是：<strong>如何保证每个机器人和转台进行无错误的完美合作？控制逻辑是什么？机器人怎么知道转台停了？转台又是怎么知道机器人完成了动作？如何用最简单的代码实现这些功能？</strong></p>
+<p>为了搞清楚这些问题，自己一个人单独进行了思考（比如UI往下面发送S1,S2,S3,以及T1,T2,T3来安排机器人的合作），思考很多，规划很多（见A4纸手记），一方面得告诉韩国人自己的想法（从代码层次描述），另一方面还要告诉教授（从高层次上如AAS描述）,真的是难搞！</p>
+<p>思考了很多，比如用最愚蠢的sleep()的方式，还有，起初教授是不允许有转台每次转换时都回到home位置的，这就难办了，为此，我还花费时间想怎样让转盘知道最后是哪个robot 完成的抓取工作，好让下一回合转盘转到下一个即将工作的robot（见手记）。</p>
+<p>自己心都操碎了，不知道韩国人到底思考过没有。</p>
+<p>当意识到必须把韩国人抓着一起讨论时，事情才慢慢变得明朗起来。</p>
+<p>一个硬件上的问题是，传感器只连接到了对应的robot，并没有同时连接到转台（传感器应该可以同时输出到多个信号吧），也就是说转台并不知道物体的位置。所以问题不能在底层得到解决。</p>
+<p>移到上层，就只能到最顶端的OPC UA client里面，就是说client里要进行频繁的读写操作，来传递信息（比如kuka传给EPSON1信号）。这就给整个系统造成了极大地通信压力，任何一个环节出现错误，整个系统就无法正常运行，并且很难排查问题出在了哪里。</p>
+<p>根据韩国人的想法，只进行简单的信息mapping是不够的，<strong>每一个robot在动之前需要和转台交互确认后，再开始动，并且在最后一步完成时要告诉转台</strong>详见代码以及手记。</p>
+<p>其实韩国人搞事情是不错的，我真的想不出来这样复杂的交互（做之前还质疑这个行不行），而是简单的采用覆盖的方法（写进一个有用的值后，立马写另外一个无用值，以保证OPC UA 值只传输一次，并且这种方法感觉不靠谱！）。</p>
+<p>事实证明韩国人的想法是可行的。</p>
+<h3 id="开始测试"><a href="#开始测试" class="headerlink" title="开始测试"></a>开始测试</h3><p>从开始进行测试到测试结束，也就只用了两个星期左右，而且测试也只是在晚上进行，所以还是算顺利的。</p>
+<p>由于我们的系统太过于复杂，信息交互太频繁，所以我还是有点担心最后的效果能不能达到。初次测试，没抱多大希望，只是想发现问题。</p>
+<p>这里又从韩国人（Changdae）身上学到一点：<strong>在项目结合测试时，一步一步的合并，不要所有的一股脑测试！</strong>这样是有利于排查bug的。</p>
+<p>起初问题包括，</p>
+<ol>
+<li>韩国人改变了OPC UA node ID，问题就不用说了。</li>
+<li>用TCP server 代替Web UI 进行测试，想要的效果是server发送一个S1，tcp client 可以持续的读取并且向下发送（此种情况下需要非阻塞的TCP,此处又见识到韩国人的代码功底，<strong>徒手改代码</strong>），这个问题调了大概两个晚上（主要是韩国人）。</li>
+<li>OPC UA mapping出现混乱，以及垃圾值（这个详见前期文章），更改OPC UA client 代码。</li>
+<li>重新组织OPC client代码，使其更为精简（我写的太复杂了！）</li>
+<li>KUKA的UDP转TCP程序里面 strncpy( , ,1)函数限制了只传输一位命令，导致robot收不到两位的命令。</li>
+</ol>
+<p>大概就是以上这么些问题，还有EPSON控制器程序在TSN下出现掉线的情况，以及其程序bug导致第一次抓取失误。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>回顾这一年，时间都花在这个项目上，抛开这个项目本身的价值不谈，就当它是一个目标，可以说这一年经过大家的努力，基本算实现了它。虽然大家都有过痛苦的时刻。</p>
+<p>感谢大家在这一年中的贡献！</p>
+<p>这一年我本人还是体会到了以前没体会过的东西，虽说能力可能没那么快得到提高。</p>
+<p>现在已经可以着手写文章了，最好可以发到一个期刊。好好想一下有哪些可以写的点，扬长避短。</p>
+
+      
+    </div>
+    
+    
+    
+	
+	<div>
+	  
+		<div>
+  
+    <div style="text-align:center;color:#bfbfbf;font-size:16px;">
+      <span>-------- The </span>
+      <i class="fa fa-"></i>
+      <span> End --------</span>
+    </div>
+  
+</div>
+	  
+	</div>
+	
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Xun Ye WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/note/" rel="tag"># note</a>
+          
+            <a href="/tags/PnP/" rel="tag"># PnP</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/12/26/14-USA-Visa/" rel="next" title="USA Visa B1/B2 Application">
+                <i class="fa fa-chevron-left"></i> USA Visa B1/B2 Application
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/12/30/16-shisanyao/" rel="prev" title="看十三邀有感">
+                看十三邀有感 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+	<div id="gitalk-container"></div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Xun Ye</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">34</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#动机"><span class="nav-text">动机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#问题"><span class="nav-text">问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于KUKA机器人"><span class="nav-text">关于KUKA机器人</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#整体的项目测试"><span class="nav-text">整体的项目测试</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#开始测试"><span class="nav-text">开始测试</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Xun Ye</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      Visitors
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      Views
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '0ffd95a2d67caac0f26c',
+          clientSecret: 'ffc0cdc0ebc6f76c8028f8a6cd91a87da2f1bcdb',
+          repo: 'hanyangyexun.github.io',
+          owner: 'hanyangyexun',
+          admin: ['hanyangyexun'],
+          id: location.pathname,
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')           
+       </script>
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("NCzrqOH8NUlkbwYJ6g4AK4lK-gzGzoHsz", "2MR5JvmwKNgU8h0qoDvxpB8R");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
